@@ -1,0 +1,67 @@
+:root {
+    --primary: rgb(95, 98, 226);
+}
+
+.btn {
+    padding: 8px 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    padding: 8px 20px;
+    transition: all 0.3s ease-out;
+    background: white;
+    color: black;
+    border: 2px solid rgb(95, 98, 226);
+    transition: 250ms;
+}
+
+.btn--primary {
+    background-color: var(--primary);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+    border: 2px solid rgb(95, 98, 226)
+}
+
+.btn--light {
+    background-color: rgb(240, 240, 253);
+    color: rgb(95, 98, 226);
+    padding: 8px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+    border: 2px solid rgb(240, 240, 253)
+}
+
+.btn--light:hover {
+    border: 2px solid rgb(240, 240, 253)
+}
+
+.btn--alt {
+    background-color: rgb(42, 182, 145);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+    border: 2px solid rgb(42, 182, 145);
+}
+
+.btn--primary-light {
+    background-color: rgb(127, 129, 231);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+    border: 2px solid rgb(127, 129, 231);
+}
+
+
+@media screen and (max-width: 960px) {
+
+
+}
+
+

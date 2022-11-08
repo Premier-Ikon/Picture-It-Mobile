@@ -1,0 +1,5 @@
+.internal-ad-container {
+    background-color: rgb(95, 98, 226);
+    height: 250px;
+    display: flex;
+}

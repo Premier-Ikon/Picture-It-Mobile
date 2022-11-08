@@ -1,0 +1,10 @@
+.footer-container {
+    height: 400px;
+    background-color: black;
+}
+
+.footer-bottom-content {
+    border-top: 2px solid rgb(51, 51, 51);
+    width: 80%;
+    height: 100px;
+}
