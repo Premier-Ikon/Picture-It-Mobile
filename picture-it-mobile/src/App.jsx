@@ -10,6 +10,7 @@ import Pricing from './screens/pricing/pricing';
 import AboutUs from './screens/aboutUs/aboutUs';
 import ContactUs from './screens/contactUs/contactUs';
 import Footer from './components/footer/footer';
+// s
 
 function App() {
   useEffect(() => {
