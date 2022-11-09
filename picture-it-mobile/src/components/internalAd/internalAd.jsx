@@ -17,7 +17,7 @@ function InternalAd() {
                     </div>
                 </div>
             </div>
-            <img style={{marginLeft: '5%'}} src={BombIcon} alt="BOMB"/>
+            {/* <img style={{marginLeft: '5%'}} src={BombIcon} alt="BOMB"/> */}
         </div>
      );
 }

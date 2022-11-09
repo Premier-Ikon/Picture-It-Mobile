@@ -1,9 +1,12 @@
 import React from 'react';
 import './home.css';
 
-import Button from '../../components/button/button';
-import HeaderImage from '../../assets/header-image.png';
-import IconBox from '../../components/iconBox/iconBox';
+import {Navigation, Pagination, Scrollbar, A11y} from "swiper";
+import {Swiper, SwiperSlide} from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 import CalendarImage from '../../assets/calendar-image.png';
 import ClockImage from '../../assets/clock-image.png';
@@ -11,10 +14,15 @@ import FileImage from '../../assets/file-image.png';
 import StarImage from '../../assets/star-image.png';
 import GroupImage from '../../assets/group-image.png';
 import SoloImage from '../../assets/solo-image.png';
+import CustomExperience from '../../assets/custom-experience-image.png';
 
+import Button from '../../components/button/button';
+import HeaderImage from '../../assets/header-image.png';
+import IconBox from '../../components/iconBox/iconBox';
 import IconButton from '../../components/iconButton/iconButton';
 import CheckItem from '../../components/checkItem/checkItem';
 import InternalAd from '../../components/internalAd/internalAd';
+import CarasoulItem from '../../components/carasoulItem/carasoulItem';
 
 
 function HomeScreen() {
@@ -28,15 +36,15 @@ function HomeScreen() {
                         <p className='general-text' style={{marginTop: '-35px'}}>Picture It Mobile is a company that provides personalized</p>
                         <p className='general-text' style={{marginTop: '-12px'}}>photo booth rentals.</p>
                     </div>
-                    <div style={{display: 'flex', marginTop: '10%'}}>
+                    <div style={{display: 'flex', marginTop: '40px'}}>
                         <Button path='/' children={'Get Started'}></Button>
-                        <div style={{marginLeft: '3%'}}>
+                        <div style={{marginLeft: '15px'}}>
                             <Button path='/' children={'Learn More'} buttonStyle={'btn--light'}></Button>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <img style={{marginTop: '10%'}} src={HeaderImage} alt="Camera"/>
+                    <img style={{marginTop: '10%', height: '515px'}} src={HeaderImage} alt="Camera"/>
                 </div>
             </div>
             <div className='home-second-container'>
@@ -47,7 +55,7 @@ function HomeScreen() {
                             <IconBox image={ClockImage} headerText={"On-Time Services"} contentText={"We strive to be on-time to all of our services"}/>
                         </div>
                     </div>
-                    <div style={{marginTop: '2%'}} className='home-icon-box-container'>
+                    <div style={{marginTop: '13px'}} className='home-icon-box-container'>
                         <IconBox image={FileImage} headerText={"Media Files"} contentText={"We offer all of the images from the event to our customers"}/>
                         <div style={{marginLeft: '2%'}}>
                             <IconBox image={StarImage} headerText={"Satisfaction"} contentText={"We strive to have a satisfaction guarauntee"}/>
@@ -75,17 +83,50 @@ function HomeScreen() {
                     </div>
                 </div>
             </div>
-            {/* <div className='home-third-container'>
+            <div className='home-third-container'>
                 <div>
-                    <div style={{width: '300px'}}>
-                        <h3 className='general-standard-header'>A customized experience!</h3>
-                        <p style={{marginTop: '-25px'}}>Get a customized intergace and LED lights to blend with your enviroment.</p>
-                    </div>
-                    <div style={{marginTop: '30px'}}>
-                        <Button path='/' children={'Learn More'}></Button>
-                    </div>
+                    <Swiper
+                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                    spaceBetween={100}
+                    slidesPerView={1}
+                    navigation
+                    onSwiper={(swiper) => console.log(swiper)}
+                    onSlideChange={() => console.log('slide change')}
+                    style={{marginTop: '50px', marginLeft: '18%'}}
+                    >
+                        <SwiperSlide style={{paddingBottom: '150px'}}>
+                            <CarasoulItem headerText={'A customized experience!'} buttonText={'Learn More'} secondaryText={'Get a customized intergace and LED lights to blend with your enviroment.'} image={CustomExperience}/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div style={{width: '300px'}}>
+                                <h3 className='general-standard-header'>A customized experience!</h3>
+                                <p style={{marginTop: '-25px'}}>Get a customized intergace and LED lights to blend with your enviroment.</p>
+                            </div>
+                            <div style={{marginTop: '30px'}}>
+                                <Button path='/' children={'Learn More'}></Button>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div style={{width: '300px'}}>
+                                <h3 className='general-standard-header'>A customized experience!</h3>
+                                <p style={{marginTop: '-25px'}}>Get a customized intergace and LED lights to blend with your enviroment.</p>
+                            </div>
+                            <div style={{marginTop: '30px'}}>
+                                <Button path='/' children={'Learn More'}></Button>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div style={{width: '300px'}}>
+                                <h3 className='general-standard-header'>A customized experience!</h3>
+                                <p style={{marginTop: '-25px'}}>Get a customized intergace and LED lights to blend with your enviroment.</p>
+                            </div>
+                            <div style={{marginTop: '30px'}}>
+                                <Button path='/' children={'Learn More'}></Button>
+                            </div>
+                        </SwiperSlide>
+                    </Swiper>
                 </div>
-            </div> */}
+            </div>
             <div className='home-fourth-container'>
                 <div className='fourth-container-content'>
                     <div>
