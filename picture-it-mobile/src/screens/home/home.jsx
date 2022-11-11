@@ -15,6 +15,7 @@ import StarImage from '../../assets/star-image.png';
 import GroupImage from '../../assets/group-image.png';
 import SoloImage from '../../assets/solo-image.png';
 import CustomExperience from '../../assets/custom-experience-image.png';
+import InstandPhoto from '../../assets/instant-photo-image.png';
 
 import Button from '../../components/button/button';
 import HeaderImage from '../../assets/header-image.png';
@@ -92,37 +93,13 @@ function HomeScreen() {
                     navigation
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}
-                    style={{marginTop: '50px', marginLeft: '18%'}}
+                    style={{marginTop: '50px', paddingLeft: '17%'}}
                     >
-                        <SwiperSlide style={{paddingBottom: '150px'}}>
+                        <SwiperSlide style={{paddingBottom: '120px'}}>
                             <CarasoulItem headerText={'A customized experience!'} buttonText={'Learn More'} secondaryText={'Get a customized intergace and LED lights to blend with your enviroment.'} image={CustomExperience}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div style={{width: '300px'}}>
-                                <h3 className='general-standard-header'>A customized experience!</h3>
-                                <p style={{marginTop: '-25px'}}>Get a customized intergace and LED lights to blend with your enviroment.</p>
-                            </div>
-                            <div style={{marginTop: '30px'}}>
-                                <Button path='/' children={'Learn More'}></Button>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div style={{width: '300px'}}>
-                                <h3 className='general-standard-header'>A customized experience!</h3>
-                                <p style={{marginTop: '-25px'}}>Get a customized intergace and LED lights to blend with your enviroment.</p>
-                            </div>
-                            <div style={{marginTop: '30px'}}>
-                                <Button path='/' children={'Learn More'}></Button>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div style={{width: '300px'}}>
-                                <h3 className='general-standard-header'>A customized experience!</h3>
-                                <p style={{marginTop: '-25px'}}>Get a customized intergace and LED lights to blend with your enviroment.</p>
-                            </div>
-                            <div style={{marginTop: '30px'}}>
-                                <Button path='/' children={'Learn More'}></Button>
-                            </div>
+                            <CarasoulItem headerText={'Instant photos!'} buttonText={'Learn More'} secondaryText={'Give a personalized keepsake for everyone to take home and cherish.'} image={InstandPhoto}/>
                         </SwiperSlide>
                     </Swiper>
                 </div>
@@ -130,7 +107,7 @@ function HomeScreen() {
             <div className='home-fourth-container'>
                 <div className='fourth-container-content'>
                     <div>
-                        <img src={GroupImage} alt="GROUP"/>
+                        <img style={{height: '430px'}} src={GroupImage} alt="GROUP"/>
                     </div>
                     <div style={{marginLeft: '24%', marginTop: '-60px'}}>
                         <h3 style={{width: '400px'}} className='general-standard-header'>Make more memories together</h3>
@@ -156,8 +133,8 @@ function HomeScreen() {
                             <Button path='/' children={'Learn More'} buttonStyle={'btn--light'}></Button>
                         </div>
                     </div>
-                    <div style={{marginLeft: '30%'}}>
-                        <img src={SoloImage} alt="GROUP"/>
+                    <div style={{marginLeft: '20%'}}>
+                        <img style={{height: '430px'}} src={SoloImage} alt="GROUP"/>
                     </div>
                 </div>
             </div>

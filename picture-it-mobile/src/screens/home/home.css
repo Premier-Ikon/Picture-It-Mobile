@@ -4,18 +4,10 @@
     margin-left: 15%;
     margin-bottom: 10%;
     margin-top: 5%;
-    /* margin-right: 15%; */
 }
 
 .home-left-container {
-    /* margin-top: 10%; */
     margin-right: 20%;
-}
-
-.left-header-component {
-    /* margin-left: 10%; */
-    /* width: 35%; */
-    /* test */
 }
 
 .general-large-header {
@@ -50,16 +42,10 @@
     display: flex;
 }
 
-.home-third-container {
-    /* height: 700px; */
-    padding-top: 90px;
-    /* padding-bottom: 200px; */
-}
-
 .home-fourth-container {
     background-color: rgb(249,249,249);
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 50px;
+    padding-bottom: 50px;
     padding-left: 11%;
 }
 
@@ -69,15 +55,13 @@
 }
 
 .swiper-button-prev {
-    left: 33% !important;
+    left: 45% !important;
     top: 80% !important;
-    /* transform: rotate(90deg); */
     transform-origin: left center;
     background-color: rgb(242, 242, 242);
     background-image: none;
     --swiper-navigation-size:20px;
     --swiper-navigation-color: black;
-    /* padding: 10px; */
     padding-left: 10px;
     padding-right:12px;
     padding-top: 7px;
@@ -86,15 +70,13 @@
 }
 
 .swiper-button-next {
-    left: 38% !important;
+    left: 50% !important;
     top: 80% !important;
-    /* transform: rotate(90deg); */
     transform-origin: left center;
     background-color: rgb(242, 242, 242);
     background-image: none;
     --swiper-navigation-size:20px;
     --swiper-navigation-color: black;
-    /* padding: 10px; */
     padding-left: 12px;
     padding-right: 10px;
     padding-top: 7px;

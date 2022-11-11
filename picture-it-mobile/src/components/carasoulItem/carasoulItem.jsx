@@ -6,8 +6,8 @@ function CarasoulItem({headerText, secondaryText, image, path, buttonText}) {
     return ( 
         <div className='carasoul-item-container'>
             <div>
-                <div style={{width: '300px'}}>
-                    <h3 className='general-standard-header'>{headerText}</h3>
+                <div style={{width: '350px'}}>
+                    <h3 style={{fontSize: '50px'}} className='general-standard-header'>{headerText}</h3>
                     <p style={{marginTop: '-25px'}}>{secondaryText}</p>
                 </div>
                 <div style={{marginTop: '30px'}}>
