@@ -1,0 +1,9 @@
+.pricing-header-container {
+    background-color: whitesmoke;
+    height: 1100px;
+}
+
+.pricing-header-text {
+    display: flex;
+    justify-content: center;
+}

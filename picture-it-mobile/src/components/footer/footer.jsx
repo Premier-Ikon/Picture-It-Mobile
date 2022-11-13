@@ -35,7 +35,7 @@ function Footer() {
                     <p style={{color: 'rgb(128, 128, 128)', marginTop: '35px'}}>Copyright © 2022</p>
 
                     <div style={{display: 'flex', marginTop: '27px', width: '90%', justifyContent:'flex-end'}}>
-                        <IconButton style={{backgroundColor: 'red'}} icon={"fa-brands fa-facebook-f"} link={''}/>
+                        <IconButton style={'light'} icon={"fa-brands fa-facebook-f"} link={''}/>
                         <div style={{marginLeft: '10px'}}>
                             <IconButton icon={"fa-brands fa-instagram"}/>
                         </div>
