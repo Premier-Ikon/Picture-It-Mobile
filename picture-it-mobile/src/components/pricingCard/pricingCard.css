@@ -1,0 +1,28 @@
+.pricing-card-container {
+    width: 380px;
+    height: 600px;
+    border-radius: 10px;
+    border: solid 1px rgb(222, 222, 222);
+    background-color: white;
+    
+}
+
+.pricing-card-container:hover {
+    border-color: white;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.pricing-card-header {
+    font-size: 25px;
+}
+
+.pricing-card-header-container {
+    border-bottom: 1px solid rgb(222, 222, 222);
+    display: flex;
+}
+
+.benefit-element-container {
+    display: flex;
+    align-items: center;
+}
