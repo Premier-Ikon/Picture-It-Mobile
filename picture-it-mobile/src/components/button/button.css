@@ -58,6 +58,42 @@
     border: 2px solid rgb(127, 129, 231);
 }
 
+.btn--pricing-light {
+    background-color: white;
+    color: black;
+    padding: 8px 20px;
+    border-radius: 8px;
+    width: 90%;
+    transition: all 0.3s ease-out;
+    border: 1.5px solid rgb(242, 242, 242);
+}
+
+.btn--pricing-light:hover {
+    background-color: rgb(95, 98, 226);
+    color: white;
+    padding: 8px 20px;
+    transition: all 0.3s ease-out;
+    border: 1.5px solid rgb(95, 98, 226);
+}
+
+.btn--pricing-dark {
+    background-color: rgb(95, 98, 226);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    width: 90%;
+    transition: all 0.3s ease-out;
+    border: 1.5px solid white;
+}
+
+.btn--pricing-dark:hover {
+    background-color: white;
+    color: rgb(95, 98, 226);
+    padding: 8px 20px;
+    transition: all 0.3s ease-out;
+    border: 1.5px solid white;
+}
+
 
 @media screen and (max-width: 960px) {
 

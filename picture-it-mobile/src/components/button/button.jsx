@@ -6,7 +6,10 @@ const STYLES = [
     'btn--primary',
     'btn--light',
     'btn--alt',
-    'btn--primary-light'
+    'btn--primary-light',
+
+    'btn--pricing-light',
+    'btn--pricing-dark'
 ]
 
 function Button  ({

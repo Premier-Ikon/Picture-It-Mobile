@@ -25,4 +25,22 @@
 .benefit-element-container {
     display: flex;
     align-items: center;
+    margin-bottom: -14px;
+}
+
+.pricing-card-element-text {
+    font-size: 15px;
+    margin-left: 10px;
+    padding-bottom: 0px;
+
+}
+
+.benefit-element-outer-container {
+    margin-left: 25px;
+
+}
+
+.pricing-container {
+    margin-left: 25px;
+
 }
