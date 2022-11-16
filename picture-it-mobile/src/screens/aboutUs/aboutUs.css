@@ -1,0 +1,40 @@
+.about-us-header-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+}
+
+.about-us-general-text {
+    color: rgb(102, 102, 102);
+}
+
+.about-us-info-container {
+    background-color: rgb(95, 98, 226);
+    height: 235px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 100px;
+}
+
+.about-us-info {
+    text-align: center;
+}
+
+.our-team-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-card-container {
+    margin-top: 35px;
+}
+
+.team-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: whitesmoke;
+}

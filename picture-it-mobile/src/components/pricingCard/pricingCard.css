@@ -7,11 +7,11 @@
     
 }
 
-.pricing-card-container:hover {
+/* .pricing-card-container:hover {
     border-color: white;
     transition: all 0.3s ease-out;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
+} */
 
 .pricing-card-header {
     font-size: 25px;

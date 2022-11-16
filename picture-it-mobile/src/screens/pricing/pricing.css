@@ -1,9 +1,31 @@
 .pricing-header-container {
-    background-color: whitesmoke;
-    height: 1100px;
+    padding-bottom: 75px;
 }
 
 .pricing-header-text {
     display: flex;
     justify-content: center;
+}
+
+.faq-page-container {
+    /* display: flex; */
+    align-content: center;
+    /* justify-content: center; */
+}
+
+.faq-container {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.general-text-link {
+    text-decoration: none;
+}
+
+.test {
+    color: rgb(95, 98, 226);
+}
+
+.test:hover {
+    color:rgb(86, 89, 255);
 }
