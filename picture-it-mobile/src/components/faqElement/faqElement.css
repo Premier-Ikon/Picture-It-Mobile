@@ -43,7 +43,7 @@
 }
 
 .faq.open .faq-icon {
-    transform: rotate(180deg);
+    transform: rotate(45deg);
 }
 
 .faq.open .faq-answer {
