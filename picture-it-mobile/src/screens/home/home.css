@@ -46,7 +46,10 @@
     background-color: rgb(249,249,249);
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-left: 11%;
+    /* padding-left: 11%; */
+    display: flex;
+    justify-content: center;
+    padding-right: 15%;
 }
 
 .fourth-container-content {

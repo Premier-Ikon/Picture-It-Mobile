@@ -24,7 +24,7 @@ function PricingCardBase() {
                     <p style={{fontSize: '12px', marginTop: '-22px'}}>+ $50 / additional hour</p>
                 </div>
                 <div style={{marginLeft: '25px', marginTop: '20px'}}>
-                    <Button buttonStyle={'btn--pricing-light'} children={'Get Started'}/>
+                    <Button buttonStyle={'btn--pricing-light'} children={'Get Started'} path='/contact-us'/>
                 </div>
             </div>
         </div>

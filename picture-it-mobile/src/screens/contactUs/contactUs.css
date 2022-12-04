@@ -80,6 +80,27 @@
 .break {
     background-color: rgb(229, 229, 229);
     border-radius: 100px;
-    height: 3px;
+    height: 2px;
     width: 80%;
+}
+
+.contact-text {
+    font-size: 16px;
+    color: rgb(128, 128, 128);
+}
+
+.contact-info {
+    font-size: 19px;
+}
+
+.contact-info-inner-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info-container {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 80px;
+    padding-top: 20px;
 }

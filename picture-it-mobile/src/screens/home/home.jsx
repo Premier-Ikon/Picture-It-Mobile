@@ -3,6 +3,8 @@ import './home.css';
 
 import {Navigation, Pagination, Scrollbar, A11y} from "swiper";
 import {Swiper, SwiperSlide} from 'swiper/react';
+import {Link} from "react-router-dom";
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -38,9 +40,9 @@ function HomeScreen() {
                         <p className='general-text' style={{marginTop: '-12px'}}>photo booth rentals.</p>
                     </div>
                     <div style={{display: 'flex', marginTop: '40px'}}>
-                        <Button path='/' children={'Get Started'}></Button>
+                        <Button path='/contact-us' children={'Get Started'}></Button>
                         <div style={{marginLeft: '15px'}}>
-                            <Button path='/' children={'Learn More'} buttonStyle={'btn--light'}></Button>
+                            <Button path='/pricing' children={'Learn More'} buttonStyle={'btn--light'}></Button>
                         </div>
                     </div>
                 </div>
@@ -51,15 +53,23 @@ function HomeScreen() {
             <div className='home-second-container'>
                 <div style={{marginLeft: '15%'}}>
                     <div className='home-icon-box-container'>
-                        <IconBox image={CalendarImage} headerText={"Scheduling"} contentText={"Scheduling at ease is a priority for our customers"}/>
+                        <Link to='/pricing' style={{textDecoration: 'none'}}>
+                            <IconBox image={CalendarImage} headerText={"Scheduling"} contentText={"Scheduling at ease is a priority for our customers"}/>
+                        </Link>
                         <div style={{marginLeft: '2%'}}>
-                            <IconBox image={ClockImage} headerText={"On-Time Services"} contentText={"We strive to be on-time to all of our services"}/>
+                            <Link to='/pricing' style={{textDecoration: 'none'}}>
+                                <IconBox image={ClockImage} headerText={"On-Time Services"} contentText={"We strive to be on-time to all of our services"}/>
+                            </Link>
                         </div>
                     </div>
                     <div style={{marginTop: '13px'}} className='home-icon-box-container'>
-                        <IconBox image={FileImage} headerText={"Media Files"} contentText={"We offer all of the images from the event to our customers"}/>
+                        <Link to='/pricing' style={{textDecoration: 'none'}}>
+                            <IconBox image={FileImage} headerText={"Media Files"} contentText={"We offer all of the images from the event to our customers"}/>
+                        </Link>
                         <div style={{marginLeft: '2%'}}>
-                            <IconBox image={StarImage} headerText={"Satisfaction"} contentText={"We strive to have a satisfaction guarauntee"}/>
+                            <Link to='/pricing' style={{textDecoration: 'none'}}>
+                                <IconBox image={StarImage} headerText={"Satisfaction"} contentText={"We strive to have a satisfaction guarauntee"}/>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -70,15 +80,15 @@ function HomeScreen() {
                             <p style={{width: '400px', marginTop: '-30px'}} className='general-text'>The best way to ensure you are capturing all of the memories being made at your party. Easy and convenient to your needs.</p>
                         </div>
                         <div style={{marginTop: '30px'}}>
-                            <Button path='/' children={'Explore'} buttonStyle={'btn--light'}></Button>
+                            <Button path='/pricing' children={'Explore'} buttonStyle={'btn--light'}></Button>
                         </div>
                     </div>
                     <div style={{marginTop: '240px'}}>
                         <p style={{color: 'rgb(125, 125, 125)'}}>Follow us</p>
                         <div style={{marginTop: '-5px'}} className='bottom-icon-container'>
-                            <IconButton icon={"fa-brands fa-facebook-f"} link={''}/>
+                            <IconButton icon={"fa-brands fa-facebook-f"} link={'https://www.facebook.com/pictureitmobile/'}/>
                             <div style={{marginLeft: '10px'}}>
-                                <IconButton icon={"fa-brands fa-instagram"}/>
+                                <IconButton icon={"fa-brands fa-instagram"} link={'https://www.instagram.com/pictureit.mobile/'}/>
                             </div>
                         </div>
                     </div>
@@ -88,7 +98,7 @@ function HomeScreen() {
                 <div>
                     <Swiper
                     modules={[Navigation, Pagination, Scrollbar, A11y]}
-                    spaceBetween={100}
+                    spaceBetween={1000}
                     slidesPerView={1}
                     navigation
                     onSwiper={(swiper) => console.log(swiper)}
@@ -105,38 +115,41 @@ function HomeScreen() {
                 </div>
             </div>
             <div className='home-fourth-container'>
-                <div className='fourth-container-content'>
-                    <div>
-                        <img style={{height: '430px'}} src={GroupImage} alt="GROUP"/>
-                    </div>
-                    <div style={{marginLeft: '24%', marginTop: '-60px'}}>
-                        <h3 style={{width: '400px'}} className='general-standard-header'>Make more memories together</h3>
-                        <div style={{marginTop: '-20px'}}>
-                            <CheckItem contentText={'Many ways to save memories'} />
-                            <CheckItem contentText={'Simply the best way to have a blast'} />
-                            <CheckItem contentText={'Share memories with friends'} />
+                <div>
+                    <div className='fourth-container-content'>
+                        <div>
+                            <img style={{height: '430px'}} src={GroupImage} alt="GROUP"/>
                         </div>
-                        <div style={{marginTop: '20px'}}>
-                            <Button path='/' children={'Learn More'}></Button>
+                        <div style={{marginLeft: '24%', marginTop: '-60px'}}>
+                            <h3 style={{width: '400px'}} className='general-standard-header'>Make more memories together</h3>
+                            <div style={{marginTop: '-20px'}}>
+                                <CheckItem contentText={'Many ways to save memories'} />
+                                <CheckItem contentText={'Simply the best way to have a blast'} />
+                                <CheckItem contentText={'Share memories with friends'} />
+                            </div>
+                            <div style={{marginTop: '20px'}}>
+                                <Button path='/pricing' children={'Learn More'}></Button>
+                            </div>
+                        </div>
+                    </div>
+                    <div style={{marginTop: '-20px'}} className='fourth-container-content'>
+                        <div style={{marginTop: '-60px', marginLeft: '5%'}}>
+                            <h3 style={{width: '380px'}} className='general-standard-header'>Easy experience for customers</h3>
+                            <div style={{marginTop: '-20px'}}>
+                                <CheckItem contentText={'Ensure a smooth process'} />
+                                <CheckItem contentText={'Simple payment process'} />
+                                <CheckItem contentText={'We work around your time'} />
+                            </div>
+                            <div style={{marginTop: '20px'}}>
+                                <Button path='/pricing' children={'Learn More'} buttonStyle={'btn--light'}></Button>
+                            </div>
+                        </div>
+                        <div style={{marginLeft: '20%'}}>
+                            <img style={{height: '430px'}} src={SoloImage} alt="GROUP"/>
                         </div>
                     </div>
                 </div>
-                <div style={{marginTop: '-20px'}} className='fourth-container-content'>
-                    <div style={{marginTop: '-60px', marginLeft: '5%'}}>
-                        <h3 style={{width: '380px'}} className='general-standard-header'>Easy experience for customers</h3>
-                        <div style={{marginTop: '-20px'}}>
-                            <CheckItem contentText={'Ensure a smooth process'} />
-                            <CheckItem contentText={'Simple payment process'} />
-                            <CheckItem contentText={'We work around your time'} />
-                        </div>
-                        <div style={{marginTop: '20px'}}>
-                            <Button path='/' children={'Learn More'} buttonStyle={'btn--light'}></Button>
-                        </div>
-                    </div>
-                    <div style={{marginLeft: '20%'}}>
-                        <img style={{height: '430px'}} src={SoloImage} alt="GROUP"/>
-                    </div>
-                </div>
+                
             </div>
             <div>
                 <InternalAd/>

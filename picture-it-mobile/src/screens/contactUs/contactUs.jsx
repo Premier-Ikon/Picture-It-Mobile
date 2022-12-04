@@ -1,7 +1,9 @@
 import './contactUs.css';
 import {useState, useRef} from "react";
+import emailjs from '@emailjs/browser';
 
 import HeaderImage from '../../assets/contact-us-image.png';
+import IconButton from '../../components/iconButton/iconButton';
 
 function ContactUs() {
     const [data, setData] = useState({
@@ -23,6 +25,38 @@ function ContactUs() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        emailjs.sendForm('service_lommso5', 'template_9coifp6', form.current, '58NNfs3g7fy1pb2A3')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset();
+        
+        emailjs.sendForm('service_ra8c5nb', 'template_bvt6lgh', form.current, '58NNfs3g7fy1pb2A3')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset();
+
+        try {
+            const response = await fetch('https://v1.nocodeapi.com/dgoose201/google_sheets/vIDxVhOVFkBjplwu?tabId=sheet1', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify([[name, email, phone, address, date, message, new Date().toLocaleString()]])
+            });
+            await response.json()
+            setData({...data, name: "", email: "", phone: "", address: "", date: "", message: ""});
+
+
+        }catch (err) {
+            console.log(err)
+        }
 
         alert("Thank you for your inquiry, someone on our team will be in contact as soon as possible . \n\n" +
             "Please allow 24 business hours for a response. If your inquiry is urgent please call us at (951)458-3966")
@@ -141,22 +175,31 @@ function ContactUs() {
             <div style={{display: 'flex', justifyContent: 'center'}}>
                 <div className='break'/>
             </div>
-            <div>
+            <div className='contact-info-container'>
                 <div>
-                    
+                    <h3 className='general-standard-header'>Contact information</h3>
                 </div>
-                <div>
+                <div className='contact-info-inner-container'>
                     <div>
-
+                        <p className='contact-text'>Email</p>
+                        <h3 className='contact-info'>info@pictureitmobile.com</h3>
                     </div>
                     <div>
-
+                        <p className='contact-text'>Number</p>
+                        <h3 className='contact-info'>(951) 796-7321</h3>
                     </div>
                     <div>
-
+                        <p className='contact-text'>Location</p>
+                        <h3 className='contact-info'>Temecula, CA</h3>
                     </div>
                     <div>
-                        
+                        <p className='contact-text'>Socials</p>
+                        <div style={{display: 'flex'}}>
+                            <IconButton icon={"fa-brands fa-facebook-f"} link={''}/>
+                            <div style={{marginLeft: '10px'}}>
+                                <IconButton icon={"fa-brands fa-instagram"}/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

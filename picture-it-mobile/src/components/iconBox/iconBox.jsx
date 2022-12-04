@@ -7,8 +7,8 @@ function IconBox({image, headerText, contentText}) {
                 <img style={{height: '86px'}} src={image} alt="TEST"></img>
             </div>
             <div className='text-container'>
-                <h3 style={{fontSize: '24px'}}>{headerText}</h3>
-                <p style={{marginTop: '-10px'}}>{contentText}</p>
+                <h3 className="header-text-icon-box">{headerText}</h3>
+                <p style={{marginTop: '-10px', color: 'rgb(128, 128, 128)'}}>{contentText}</p>
             </div>
         </div>
      );
