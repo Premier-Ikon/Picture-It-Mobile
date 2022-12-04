@@ -34,7 +34,7 @@ function HomeScreen() {
             <div className='home-header-container'>
                 <div className='home-left-container'>
                     <div className='left-header-component'>
-                        <h3 className='general-large-header'>Your memoriess,</h3>
+                        <h3 className='general-large-header'>Your memories,</h3>
                         <h3 style={{marginTop: '-60px'}} className='general-large-header'>our joy.</h3>
                         <p className='general-text' style={{marginTop: '-35px'}}>Picture It Mobile is a company that provides personalized</p>
                         <p className='general-text' style={{marginTop: '-12px'}}>photo booth rentals.</p>
