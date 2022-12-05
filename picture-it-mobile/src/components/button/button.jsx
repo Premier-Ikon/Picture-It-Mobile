@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 const STYLES = [
     'btn--primary',
     'btn--light',
+    'btn--light-wide',
     'btn--alt',
     'btn--primary-light',
 

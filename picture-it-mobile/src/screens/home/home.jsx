@@ -35,11 +35,10 @@ function HomeScreen() {
                 <div className='home-left-container'>
                     <div className='left-header-component'>
                         <h3 className='general-large-header'>Your memories,</h3>
-                        <h3 style={{marginTop: '-60px'}} className='general-large-header'>our joy.</h3>
-                        <p className='general-text' style={{marginTop: '-35px'}}>Picture It Mobile is a company that provides personalized</p>
-                        <p className='general-text' style={{marginTop: '-12px'}}>photo booth rentals.</p>
+                        <h3 className='general-large-header-bottom'>our joy.</h3>
+                        <p className='general-text' style={{marginTop: '-35px', width: '80%'}}>Picture It Mobile is a company that provides personalized photo booth rentals.</p>
                     </div>
-                    <div style={{display: 'flex', marginTop: '40px'}}>
+                    <div className='home-header-button-container'>
                         <Button path='/contact-us' children={'Get Started'}></Button>
                         <div style={{marginLeft: '15px'}}>
                             <Button path='/pricing' children={'Learn More'} buttonStyle={'btn--light'}></Button>
@@ -47,9 +46,27 @@ function HomeScreen() {
                     </div>
                 </div>
                 <div>
-                    <img style={{marginTop: '10%', height: '515px'}} src={HeaderImage} alt="Camera"/>
+                    <img className='home-header-image' src={HeaderImage} alt="Camera"/>
                 </div>
             </div>
+            <div className='home-header-container-mobile'>
+                <div className='home-left-container'>
+                    <div className='left-header-component'>
+                        <h3 className='general-large-header' style={{fontSize: '45px', textAlign: 'center',}}>Your memories, our joy.</h3>
+                        <p className='general-text' style={{textAlign: 'center', marginTop: '-35px', width: '100%'}}>Picture It Mobile is a company that provides personalized photo booth rentals.</p>
+                    </div>
+                    <div className='home-header-button-container' style={{display: 'flex', justifyContent: 'center', paddingTop: '0px'}}>
+                        <Button path='/contact-us' children={'Get Started'}></Button>
+                        <div style={{marginLeft: '15px'}}>
+                            <Button path='/pricing' children={'Learn More'} buttonStyle={'btn--light'}></Button>
+                        </div>
+                    </div>
+                </div>
+                <div style={{display: 'flex', justifyContent: 'center', paddingLeft: '10%'}}>
+                    <img className='home-header-image' src={HeaderImage} alt="Camera"/>
+                </div>
+            </div>
+
             <div className='home-second-container'>
                 <div style={{marginLeft: '15%'}}>
                     <div className='home-icon-box-container'>
@@ -77,13 +94,13 @@ function HomeScreen() {
                     <div className='second-right-container'>
                         <div>
                             <h3 className='general-standard-header'>The easiest way to make amazing memories.</h3>
-                            <p style={{width: '400px', marginTop: '-30px'}} className='general-text'>The best way to ensure you are capturing all of the memories being made at your party. Easy and convenient to your needs.</p>
+                            <p style={{width: '100%', marginTop: '-30px'}} className='general-text'>The best way to ensure you are capturing all of the memories being made at your party. Easy and convenient to your needs.</p>
                         </div>
                         <div style={{marginTop: '30px'}}>
                             <Button path='/pricing' children={'Explore'} buttonStyle={'btn--light'}></Button>
                         </div>
                     </div>
-                    <div style={{marginTop: '240px'}}>
+                    <div className='icon-box-container-home'>
                         <p style={{color: 'rgb(125, 125, 125)'}}>Follow us</p>
                         <div style={{marginTop: '-5px'}} className='bottom-icon-container'>
                             <IconButton icon={"fa-brands fa-facebook-f"} link={'https://www.facebook.com/pictureitmobile/'}/>
@@ -94,6 +111,53 @@ function HomeScreen() {
                     </div>
                 </div>
             </div>
+            <div className='home-second-container-mobile'>
+                <div style={{display: 'flex', justifyContent: 'center'}}>
+                    <div style={{width: '100%'}} className='second-right-container'>
+                        <div style={{paddingLeft: '15px', paddingRight: '15px'}}>
+                            <h3 style={{textAlign: 'center'}} className='general-standard-header'>The easiest way to make amazing memories.</h3>
+                            <p style={{width: '100%', marginTop: '-30px', textAlign: 'center'}} className='general-text'>The best way to ensure you are capturing all of the memories being made at your party. Easy and convenient to your needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div style={{display: 'flex', justifyContent: 'center', paddingTop: '30px'}}>
+                    <div style={{paddingRight: '10px'}}>
+                        <div className='home-icon-box-container'>
+                            <Link to='/pricing' style={{textDecoration: 'none'}}>
+                                <IconBox image={CalendarImage} headerText={"Scheduling"} contentText={"Scheduling at ease is a priority for our customers"}/>
+                            </Link>
+                            <div style={{marginLeft: '2%'}}>
+                                <Link to='/pricing' style={{textDecoration: 'none'}}>
+                                    <IconBox image={ClockImage} headerText={"On-Time Services"} contentText={"We strive to be on-time to all of our services"}/>
+                                </Link>
+                            </div>
+                        </div>
+                        <div style={{marginTop: '13px'}} className='home-icon-box-container'>
+                            <Link to='/pricing' style={{textDecoration: 'none'}}>
+                                <IconBox image={FileImage} headerText={"Media Files"} contentText={"We offer all of the images from the event to our customers"}/>
+                            </Link>
+                            <div style={{marginLeft: '2%'}}>
+                                <Link to='/pricing' style={{textDecoration: 'none'}}>
+                                    <IconBox image={StarImage} headerText={"Satisfaction"} contentText={"We strive to have a satisfaction guarauntee"}/>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style={{marginTop: '30px', display: 'flex', justifyContent: 'center', paddingLeft: '20px', paddingRight: '20px'}}>
+                    <Button path='/pricing' children={'Explore'} buttonStyle={'btn--light-wide'}></Button>
+                </div>
+                {/* <div className='icon-box-container-home'>
+                    <p style={{color: 'rgb(125, 125, 125)'}}>Follow us</p>
+                    <div style={{marginTop: '-5px'}} className='bottom-icon-container'>
+                        <IconButton icon={"fa-brands fa-facebook-f"} link={'https://www.facebook.com/pictureitmobile/'}/>
+                        <div style={{marginLeft: '10px'}}>
+                            <IconButton icon={"fa-brands fa-instagram"} link={'https://www.instagram.com/pictureit.mobile/'}/>
+                        </div>
+                    </div>
+                </div> */}
+            </div>
+
             <div className='home-third-container'>
                 <div>
                     <Swiper

@@ -40,6 +40,16 @@
     border: 2px solid rgb(240, 240, 253)
 }
 
+.btn--light-wide {
+    background-color: rgb(240, 240, 253);
+    color: rgb(95, 98, 226);
+    width: 400px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+    border: 2px solid rgb(240, 240, 253)
+}
+
 .btn--alt {
     background-color: rgb(42, 182, 145);
     color: white;
@@ -114,7 +124,13 @@
 
 
 @media screen and (max-width: 960px) {
+    .btn {
+        display: revert;
+    }
 
+    .btn--light-wide {
+        width: 270px;
+    }
 
 }
 
