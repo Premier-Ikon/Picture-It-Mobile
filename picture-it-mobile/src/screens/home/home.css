@@ -50,6 +50,10 @@
     display: flex;
 }
 
+.home-third-container-mobile {
+    display: none;
+}
+
 .general-text {
     font-size: '18px';
     color: rgb(128, 128, 128);
@@ -71,6 +75,16 @@
     display: flex;
     justify-content: center;
     padding-right: 15%;
+}
+
+.home-fourth-container-mobile {
+    background-color: rgb(249,249,249);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* padding-left: 11%; */
+    display: flex;
+    justify-content: center;
+    display: none;
 }
 
 .fourth-container-content {
@@ -161,6 +175,14 @@
     .icon-box-container-home {
         margin-top: 120px;
     }
+
+    .home-third-container {
+        display: none;
+    }
+
+    .home-third-container-mobile {
+        display: revert;
+    }
 }
 
 @media screen and (max-width: 1160px) {
@@ -186,6 +208,15 @@
         margin-top: 20px;
     }
 
+    .home-fourth-container {
+        display: none;
+    }
+
+    .home-fourth-container-mobile {
+        display: revert;
+    }
+
+
 }
 
 @media screen and (max-width: 1350px) {
@@ -196,6 +227,8 @@
     .home-second-container-mobile {
         display: revert;
     }
+
+    
 }
 
 @media screen and (max-width: 1000px) {
@@ -234,6 +267,37 @@
 
     .home-header-image {
         height: 250px;
+    }
+
+    .swiper-button-prev {
+        left: 35% !important;
+        top: 80% !important;
+        transform-origin: left center;
+        background-color: rgb(242, 242, 242);
+        background-image: none;
+        --swiper-navigation-size:20px;
+        --swiper-navigation-color: black;
+        padding-left: 10px;
+        padding-right:12px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border-radius: 100%;
+    }
+    
+    .swiper-button-next {
+        left: 50% !important;
+        top: 80% !important;
+        transform-origin: left center;
+        background-color: rgb(242, 242, 242);
+        background-image: none;
+        --swiper-navigation-size:20px;
+        --swiper-navigation-color: black;
+        padding-left: 12px;
+        padding-right: 10px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border-radius: 100%;
+        margin-left: 5%;
     }
 
 }

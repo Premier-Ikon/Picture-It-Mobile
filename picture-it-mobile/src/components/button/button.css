@@ -50,6 +50,20 @@
     border: 2px solid rgb(240, 240, 253)
 }
 
+.btn--light-wide:hover {
+    border: 2px solid rgb(240, 240, 253)
+}
+
+.btn--primary-wide {
+    background-color: var(--primary);
+    color: white;
+    width: 400px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+    border: 2px solid rgb(95, 98, 226);
+}
+
 .btn--alt {
     background-color: rgb(42, 182, 145);
     color: white;
@@ -129,6 +143,10 @@
     }
 
     .btn--light-wide {
+        width: 270px;
+    }
+
+    .btn--primary-wide {
         width: 270px;
     }
 

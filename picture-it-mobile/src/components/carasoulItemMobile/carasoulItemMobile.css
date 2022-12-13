@@ -1,0 +1,10 @@
+.carasoul-item-container-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .mobile-inner-content {
+    display: flex;
+    justify-content: center;
+} */

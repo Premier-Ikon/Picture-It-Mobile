@@ -52,7 +52,7 @@ function Footer() {
                 <div style={{marginTop: '45px', display: 'flex'}} className='footer-bottom-content' >
                     <p style={{color: 'rgb(128, 128, 128)', marginTop: '35px'}}>Copyright © 2022</p>
 
-                    <div style={{display: 'flex', marginTop: '27px', width: '90%', justifyContent:'flex-end'}}>
+                    <div style={{display: 'flex', marginTop: '27px',position: 'absolute', right: '10%'}}>
                         <IconButton style={'light'} icon={"fa-brands fa-facebook-f"} link={'https://www.facebook.com/pictureitmobile/'}/>
                         <div style={{marginLeft: '10px'}}>
                             <IconButton icon={"fa-brands fa-instagram"} link={'https://www.instagram.com/pictureit.mobile/'}/>

@@ -6,6 +6,7 @@ const STYLES = [
     'btn--primary',
     'btn--light',
     'btn--light-wide',
+    'btn--primary-wide',
     'btn--alt',
     'btn--primary-light',
 

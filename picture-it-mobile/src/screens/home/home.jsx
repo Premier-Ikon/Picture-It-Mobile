@@ -26,6 +26,7 @@ import IconButton from '../../components/iconButton/iconButton';
 import CheckItem from '../../components/checkItem/checkItem';
 import InternalAd from '../../components/internalAd/internalAd';
 import CarasoulItem from '../../components/carasoulItem/carasoulItem';
+import CarasoulItemMobile from '../../components/carasoulItemMobile/carasoulItemMobile';
 
 
 function HomeScreen() {
@@ -178,6 +179,27 @@ function HomeScreen() {
                     </Swiper>
                 </div>
             </div>
+            <div className='home-third-container-mobile'>
+                <div>
+                    <Swiper
+                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                    spaceBetween={100}
+                    slidesPerView={1}
+                    navigation
+                    onSwiper={(swiper) => console.log(swiper)}
+                    onSlideChange={() => console.log('slide change')}
+                    style={{marginTop: '50px'}}
+                    >
+                        <SwiperSlide style={{paddingBottom: '120px'}}>
+                            <CarasoulItemMobile headerText={'A customized experience!'} buttonText={'Learn More'} secondaryText={'Get a customized intergace and LED lights to blend with your enviroment.'} image={CustomExperience}/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <CarasoulItemMobile headerText={'Instant photos!'} buttonText={'Learn More'} secondaryText={'Give a personalized keepsake for everyone to take home and cherish.'} image={InstandPhoto}/>
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
+            </div>
+
             <div className='home-fourth-container'>
                 <div>
                     <div className='fourth-container-content'>
@@ -205,11 +227,55 @@ function HomeScreen() {
                                 <CheckItem contentText={'We work around your time'} />
                             </div>
                             <div style={{marginTop: '20px'}}>
-                                <Button path='/pricing' children={'Learn More'} buttonStyle={'btn--light'}></Button>
+                                <Button path='/pricing' children={'Learn More'}></Button>
                             </div>
                         </div>
                         <div style={{marginLeft: '20%'}}>
                             <img style={{height: '430px'}} src={SoloImage} alt="GROUP"/>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div className='home-fourth-container-mobile'>
+                <div>
+                    <div>
+                        <div style={{display: 'flex', justifyContent: 'center'}}>
+                            <div>
+                                <h3 style={{width: '400px', textAlign: 'center'}} className='general-standard-header'>Make more memories together</h3>
+                            </div>
+                        </div>
+                        <div style={{display: 'flex', justifyContent: 'center', marginTop: '-25px'}}>
+                            <div>
+                                <CheckItem contentText={'Many ways to save memories'} />
+                                <CheckItem contentText={'Simply the best way to have a blast'} />
+                                <CheckItem contentText={'Share memories with friends'} />
+                            </div>
+                        </div>
+                        {/* <div style={{display: 'flex', justifyContent: 'center', marginTop: '15px'}}>
+                            <div>
+                                <Button buttonStyle={'btn--primary-wide'} path='/pricing' children={'Learn More'}></Button>
+                            </div>
+                        </div> */}
+                    </div>
+
+                    <div style={{marginTop: '-20px'}}>
+                        <div style={{display: 'flex', justifyContent: 'center'}}>
+                            <div>
+                                <h3 style={{width: '400px', textAlign: 'center'}} className='general-standard-header'>Easy experience for customers</h3>
+                            </div>
+                        </div>
+                        <div style={{display: 'flex', justifyContent: 'center', marginTop: '-25px'}}>
+                            <div>
+                                <CheckItem contentText={'Ensure a smooth process'} />
+                                <CheckItem contentText={'Simple payment process'} />
+                                <CheckItem contentText={'We work around your time'} />
+                            </div>
+                        </div>
+                        <div style={{display: 'flex', justifyContent: 'center', marginTop: '15px'}}>
+                            <div>
+                                <Button buttonStyle={'btn--primary-wide'} path='/pricing' children={'Get Started'}></Button>
+                            </div>
                         </div>
                     </div>
                 </div>
