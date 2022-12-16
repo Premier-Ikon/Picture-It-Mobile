@@ -42,7 +42,7 @@
   }
   
   .nav-links {
-    color: black;
+    color: rgb(25, 25, 25);
     text-decoration: none;
     padding: 0.5rem 1rem;
   }
@@ -54,7 +54,7 @@
   }
   
   .fa-bars {
-    color: black;
+    color: rgb(25, 25, 25);
   }
   
   .nav-links-mobile {
@@ -90,7 +90,7 @@
     .nav-menu {
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: 95.8vw;
       position: absolute;
       top: 80px;
       left: -110%;
@@ -105,14 +105,14 @@
       opacity: 1;
       transition: all 0.5s ease;
       z-index: 1;
+      border-bottom: 1px solid rgb(51, 51, 51);
       border-bottom-right-radius: 10px;
       border-bottom-left-radius: 10px;
     }
   
     .nav-links {
       text-align: center;
-      padding: 2rem;
-      width: 100%;
+      width: 80%;
       display: table;
     }
   
@@ -140,7 +140,7 @@
     }
   
     .fa-times {
-      color: black;
+      color: rgb(25, 25, 25);
       font-size: 2rem;
     }
   
@@ -168,3 +168,10 @@
     }
   }
   
+  @media screen and (max-width: 500px) {
+    .nav-menu {
+      width: 90.7vw;
+    }
+
+
+  }

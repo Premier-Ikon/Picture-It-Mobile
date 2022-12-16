@@ -9,8 +9,8 @@
 .home-header-container-mobile {
     display: flex;
     align-items: center;
-    margin-left: 15%;
-    margin-bottom: 15%;
+    /* margin-left: 15%; */
+    margin-bottom: 12%;
     margin-top: 100px;
     display: none;
 }
@@ -99,7 +99,7 @@
     background-color: rgb(242, 242, 242);
     background-image: none;
     --swiper-navigation-size:20px;
-    --swiper-navigation-color: black;
+    --swiper-navigation-color: rgb(25, 25, 25);
     padding-left: 10px;
     padding-right:12px;
     padding-top: 7px;
@@ -114,7 +114,7 @@
     background-color: rgb(242, 242, 242);
     background-image: none;
     --swiper-navigation-size:20px;
-    --swiper-navigation-color: black;
+    --swiper-navigation-color: rgb(25, 25, 25);
     padding-left: 12px;
     padding-right: 10px;
     padding-top: 7px;
@@ -267,6 +267,8 @@
 
     .home-header-image {
         height: 250px;
+        margin-top: 35px;
+        padding-right: 0px;
     }
 
     .swiper-button-prev {
@@ -276,7 +278,7 @@
         background-color: rgb(242, 242, 242);
         background-image: none;
         --swiper-navigation-size:20px;
-        --swiper-navigation-color: black;
+        --swiper-navigation-color: rgb(25, 25, 25);
         padding-left: 10px;
         padding-right:12px;
         padding-top: 7px;
@@ -291,7 +293,7 @@
         background-color: rgb(242, 242, 242);
         background-image: none;
         --swiper-navigation-size:20px;
-        --swiper-navigation-color: black;
+        --swiper-navigation-color: rgb(25, 25, 25);
         padding-left: 12px;
         padding-right: 10px;
         padding-top: 7px;

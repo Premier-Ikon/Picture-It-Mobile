@@ -7,6 +7,23 @@
 
 .about-us-general-text {
     color: rgb(102, 102, 102);
+    font-size: 21px;
+}
+
+.about-us-general-text-bottom {
+    color: rgb(102, 102, 102);
+    font-size: 21px;
+    /* width: 85%; */
+    margin-top: -30px;
+}
+
+.header-container-about {
+    width: 45%;
+}
+
+.about-us-general-text-top {
+    color: rgb(102, 102, 102);
+    font-size: 24px;
 }
 
 .about-us-info-container {
@@ -33,8 +50,165 @@
     margin-top: 35px;
 }
 
+.info-header {
+    font-size: 60px;
+    color: white;
+}
+
+.info-content {
+    margin-top: -40px;
+    font-size: 20px;
+    color: rgb(175, 177, 241);
+}
+
 .team-container {
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: whitesmoke;
+}
+
+.our-team-inner {
+    width: 45%;
+}
+
+.profile-image-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+@media screen and (max-width: 1545px) {
+    .info-header {
+        font-size: 45px;
+    }
+
+    .info-content {
+        font-size: 16px;
+        margin-top: -35px;
+    }
+
+    .about-us-info-container {
+        height: 180px;
+    }
+
+}
+
+@media screen and (max-width: 1500px) {
+    .profile-image-container {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .info-header {
+        font-size: 35px;
+    }
+
+    .info-content {
+        font-size: 15px;
+        margin-top: -32px;
+    }
+
+    .about-us-info-container {
+        height: 140px;
+    }
+
+    .profile-image-container {
+        padding-left: 17%;
+        padding-right: 17%;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+    .profile-image-container {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+@media screen and (max-width: 935px) {
+    .header-container-about {
+        width: 65%;
+    }
+
+    .about-us-general-text-bottom {
+        margin-top: -20px;
+    }
+
+    .about-us-header-container {
+        margin-top: 100px;
+    }
+
+    .our-team-inner {
+        width: 65%;
+    }
+
+    .profile-image-container {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+    .profile-image-container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .about-us-info-container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .header-container-about {
+        width: 95%;
+    }
+
+    .about-us-general-text-bottom {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .about-us-header-container {
+        margin-top: 50px;
+    }
+
+    .info-header {
+        font-size: 30px;
+    }
+
+    .info-content {
+        font-size: 14px;
+        margin-top: -28px;
+    }
+
+    .about-us-info-container {
+        margin-top: 50px;
+        height: 120px;
+    }
+
+    .our-team-inner {
+        width: 95%;
+    }
+
+    .team-container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .profile-card-container {
+        margin-top: 20px;
+    }
+
 }

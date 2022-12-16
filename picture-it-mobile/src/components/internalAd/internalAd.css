@@ -1,5 +1,60 @@
 .internal-ad-container {
     background-color: rgb(95, 98, 226);
-    height: 250px;
+    /* height: 250px; */
+    padding-top: 1%;
+    padding-bottom: 5%;
     display: flex;
+}
+
+.inner-ad-container {
+    margin-left: 10%;
+}
+
+.general-standard-header-ad {
+    font-size: 42px;
+}
+
+.ad-button-container {
+    display: 'flex';
+    margin-top: 15px;
+}
+
+.ad-header-container {
+    width: 550px
+}
+
+@media screen and (max-width: 1160px) {
+    .general-standard-header-ad {
+        font-size: 35px;
+        text-align: center;
+
+    }
+
+    .internal-ad-container {
+        justify-content: center;
+    }
+
+    .inner-ad-container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .ad-button-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ad-header-container {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .general-standard-header-ad {
+        font-size: 30px;
+        text-align: center;
+
+    }
+
 }

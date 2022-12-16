@@ -51,10 +51,10 @@ function HomeScreen() {
                 </div>
             </div>
             <div className='home-header-container-mobile'>
-                <div className='home-left-container'>
+                <div style={{paddingLeft: '10%'}} className='home-left-container'>
                     <div className='left-header-component'>
                         <h3 className='general-large-header' style={{fontSize: '45px', textAlign: 'center',}}>Your memories, our joy.</h3>
-                        <p className='general-text' style={{textAlign: 'center', marginTop: '-35px', width: '100%'}}>Picture It Mobile is a company that provides personalized photo booth rentals.</p>
+                        <p className='general-text' style={{textAlign: 'center', marginTop: '-35px'}}>Picture It Mobile is a company that provides personalized photo booth rentals.</p>
                     </div>
                     <div className='home-header-button-container' style={{display: 'flex', justifyContent: 'center', paddingTop: '0px'}}>
                         <Button path='/contact-us' children={'Get Started'}></Button>
@@ -63,7 +63,7 @@ function HomeScreen() {
                         </div>
                     </div>
                 </div>
-                <div style={{display: 'flex', justifyContent: 'center', paddingLeft: '10%'}}>
+                <div style={{display: 'flex', justifyContent: 'center'}}>
                     <img className='home-header-image' src={HeaderImage} alt="Camera"/>
                 </div>
             </div>

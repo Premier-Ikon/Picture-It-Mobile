@@ -13,7 +13,7 @@
     padding: 8px 20px;
     transition: all 0.3s ease-out;
     background: white;
-    color: black;
+    color: rgb(25, 25, 25);
     border: 2px solid rgb(95, 98, 226);
     transition: 250ms;
 }
@@ -75,7 +75,7 @@
 
 .btn--alt:hover {
     background-color: white;
-    color: black;
+    color: rgb(25, 25, 25);
     padding: 8px 20px;
     border-radius: 10px;
     transition: all 0.3s ease-out;
@@ -93,7 +93,7 @@
 
 .btn--primary-light:hover {
     background-color: white;
-    color: black;
+    color: rgb(25, 25, 25);
     padding: 8px 20px;
     border-radius: 10px;
     transition: all 0.3s ease-out;
@@ -102,7 +102,7 @@
 
 .btn--pricing-light {
     background-color: white;
-    color: black;
+    color: rgb(25, 25, 25);
     padding: 8px 20px;
     border-radius: 8px;
     width: 90%;

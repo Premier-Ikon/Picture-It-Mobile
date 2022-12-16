@@ -4,11 +4,11 @@ function ProfileCard({name, role, imageSrc}) {
     return ( 
         <div>
             <div>
-                <img style={{width: '320px', borderRadius: '8px'}} src={imageSrc}/>
+                <img className='profile-image' src={imageSrc}/>
             </div>
-            <div style={{textAlign: 'center', marginTop: '-10px'}}>
-                <h3 style={{fontSize: '20px'}}>{name}</h3>
-                <p style={{color: 'rgb(102, 102, 102)', fontSize: '17px', marginTop: '-15px'}}>{role}</p>
+            <div className='profile-content'>
+                <h3 className='profile-name'>{name}</h3>
+                <p className='profile-role' >{role}</p>
             </div>
         </div>
      );

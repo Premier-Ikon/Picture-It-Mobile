@@ -6,18 +6,17 @@ import BombIcon from '../../assets/bomb-icon.png';
 function InternalAd() {
     return ( 
         <div className="internal-ad-container">
-            <div style={{marginLeft: '10%'}}>
-                <div style={{width: '550px'}}>
-                    <h3 style={{color: 'white'}} className='general-standard-header'>The best way to make sure you have a great time.</h3>
+            <div className='inner-ad-container'>
+                <div className='ad-header-container'>
+                    <h3 style={{color: 'white'}} className='general-standard-header-ad'>The best way to make sure you have a great time.</h3>
                 </div>
-                <div style={{display: 'flex', marginTop: '-15px'}}>
+                <div className='ad-button-container' style={{display: 'flex', marginTop: '-15px'}}>
                     <Button path='/pricing' children={'Learn More'} buttonStyle={'btn--alt'}></Button>
                     <div style={{marginLeft: '.75%'}}>
                         <Button path='/contact-us' children={'Contact Us'} buttonStyle={'btn--primary-light'}></Button>
                     </div>
                 </div>
             </div>
-            {/* <img style={{marginLeft: '5%'}} src={BombIcon} alt="BOMB"/> */}
         </div>
      );
 }
