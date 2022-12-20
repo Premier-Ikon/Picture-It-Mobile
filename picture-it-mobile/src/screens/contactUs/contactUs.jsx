@@ -168,26 +168,137 @@ function ContactUs() {
                         </div>
                     </div>
                     <div>
-                        <img style={{height: '470px', marginLeft: '50%', marginTop: '40px'}} src={HeaderImage} alt="Camera"/>
+                        <img className='contact-image' style={{}} src={HeaderImage} alt="Camera"/>
                     </div>
                 </div>
             </div>
+            <div className='contact-header-container-mobile'>
+                <div className='header-data-container'>
+                    <div className='form-data-container'>
+                        <div style={{marginBottom: '20px'}}>
+                            <h3 className='general-standard-header'>Get In Touch With Us</h3>
+                            <p className='contact-us-general-text'>Fill out the form and an expert will contact you shortly</p>
+                        </div>
+                        <div className="form-data">
+                            <form ref={form} onSubmit={handleSubmit}>
+                                <div className="top-data">
+                                    <div>
+                                        <div className="data-header">
+                                            <label>Your name</label>
+                                        </div>
+                                        <input
+                                            type="text"
+                                            name={"name"}
+                                            autoComplete={"off"}
+                                            value={name}
+                                            onChange={handleChange}
+                                            className="data-box"
+                                        />
+                                    </div>
+                                    <div style={{marginLeft: '30px'}}>
+                                        <div className="data-header">
+                                            <label>Your email</label>
+                                        </div>
+                                        <input
+                                            type="email"
+                                            name={"email"}
+                                            autoComplete={"off"}
+                                            value={email}
+                                            onChange={handleChange}
+                                            className="data-box"
+
+                                        />
+                                    </div>
+                                </div>
+                                <div className="middle-data">
+                                    <div>
+                                        <div className="data-header">
+                                            <label>Your phone number</label>
+                                        </div>
+                                        <input
+                                            type="text"
+                                            name={"phone"}
+                                            autoComplete={"off"}
+                                            value={phone}
+                                            onChange={handleChange}
+                                            className="data-box"
+                                        />
+                                    </div>
+                                    <div style={{marginLeft: '30px'}}>
+                                        <div className="data-header">
+                                            <label>Your address</label>
+                                        </div>
+                                        <input
+                                            type="text"
+                                            name={"address"}
+                                            autoComplete={"off"}
+                                            value={address}
+                                            onChange={handleChange}
+                                            className="data-box"
+                                        />
+                                    </div>
+                                </div>
+                                <div className='bottom-data'>
+                                    <div>
+                                        <div className="data-header">
+                                            <label>Date of event</label>
+                                        </div>
+                                        <input
+                                            type="text"
+                                            name={"date"}
+                                            autoComplete={"off"}
+                                            value={date}
+                                            onChange={handleChange}
+                                            className="data-box"
+                                        />
+
+                                    </div>
+                                </div>
+                                <div style={{marginTop: '10px'}}>
+                                    <div className="data-header">
+                                        <label>Your message</label>
+                                    </div>
+                                    <textarea
+                                        name={"message"}
+                                        // rows={3}
+                                        autoComplete={"off"}
+                                        value={message}
+                                        className={"message-box"}
+                                        onChange={handleChange}
+                                    />
+                                </div>
+                                <div style={{}}>
+                                    <button type='submit' className='submit-button-mobile'>
+                                        Submit
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div style={{display: 'flex', justifyContent: 'center'}}>
                 <div className='break'/>
             </div>
+
             <div className='contact-info-container'>
                 <div>
                     <h3 className='general-standard-header'>Contact information</h3>
                 </div>
                 <div className='contact-info-inner-container'>
-                    <div>
-                        <p className='contact-text'>Email</p>
-                        <h3 className='contact-info'>info@pictureitmobile.com</h3>
-                    </div>
-                    <div>
-                        <p className='contact-text'>Number</p>
-                        <h3 className='contact-info'>(951) 796-7321</h3>
-                    </div>
+                    <button style={{backgroundColor: 'transparent', height: '68px', padding: '0px', borderColor: 'transparent', textAlign: 'left', display: 'revert', color: 'black'}} onClick={() => window.open( "mailto: info@pictureitmobile.com?subject=Online Inquiry", '_self')}>
+                        <div>
+                            <p className='contact-text'>Email</p>
+                            <h3 className='contact-info'>info@pictureitmobile.com</h3>
+                        </div>
+                    </button>
+                    <button style={{backgroundColor: 'transparent', borderColor: 'transparent', textAlign: 'left'}} onClick={() => window.open( 'tel: 951-796-7321', '_self')}>
+                        <div>
+                            <p className='contact-text'>Number</p>
+                            <h3 className='contact-info'>(951) 796-7321</h3>
+                        </div>
+                    </button>
                     <div>
                         <p className='contact-text'>Location</p>
                         <h3 className='contact-info'>Temecula, CA</h3>
@@ -195,9 +306,45 @@ function ContactUs() {
                     <div>
                         <p className='contact-text'>Socials</p>
                         <div style={{display: 'flex'}}>
-                            <IconButton icon={"fa-brands fa-facebook-f"} link={''}/>
+                            <IconButton icon={"fa-brands fa-facebook-f"} link={'https://www.facebook.com/pictureitmobile/'}/>
                             <div style={{marginLeft: '10px'}}>
-                                <IconButton icon={"fa-brands fa-instagram"}/>
+                                <IconButton icon={"fa-brands fa-instagram"} link={'https://www.instagram.com/pictureit.mobile/'}/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='contact-info-container-mobile'>
+                <div>
+                    <h3 className='general-standard-header'>Contact information</h3>
+                </div>
+                <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                    <div >
+                        <button style={{backgroundColor: 'transparent', height: '68px', padding: '0px', borderColor: 'transparent', textAlign: 'left', display: 'revert', color: 'black'}} onClick={() => window.open( "mailto: info@pictureitmobile.com?subject=Online Inquiry", '_self')}>
+                            <div>
+                                <p className='contact-text'>Email</p>
+                                <h3 className='contact-info'>info@pictureitmobile.com</h3>
+                            </div>
+                        </button>
+                        <div>
+                            <p className='contact-text'>Location</p>
+                            <h3 className='contact-info'>Temecula, CA</h3>
+                        </div>
+                    </div>
+                    <div >
+                        <button style={{backgroundColor: 'transparent', height: '68px', padding: '0px', borderColor: 'transparent', textAlign: 'left', display: 'revert', color: 'black'}} onClick={() => window.open( 'tel: 951-796-7321', '_self')}>
+                            <div style={{padding: '0px'}}>
+                                <p className='contact-text'>Number</p>
+                                <h3 className='contact-info'>(951) 796-7321</h3>
+                            </div>
+                        </button>
+                        <div>
+                            <p className='contact-text'>Socials</p>
+                            <div style={{display: 'flex'}}>
+                                <IconButton icon={"fa-brands fa-facebook-f"} link={'https://www.facebook.com/pictureitmobile/'}/>
+                                <div style={{marginLeft: '10px'}}>
+                                    <IconButton icon={"fa-brands fa-instagram"} link={'https://www.instagram.com/pictureit.mobile/'}/>
+                                </div>
                             </div>
                         </div>
                     </div>

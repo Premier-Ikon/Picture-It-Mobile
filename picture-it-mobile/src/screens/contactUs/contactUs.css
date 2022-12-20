@@ -2,11 +2,20 @@
 
 }
 
+.contact-header-container-mobile {
+    display: none;
+}
+
 .header-data-container {
     display: flex;
     margin-bottom: 10%;
     margin-top: 110px;
     margin-left: 14%;
+}
+
+.contact-us-general-text {
+    font-size: 18px;
+    margin-top: -30px;
 }
 
 .top-data {
@@ -77,6 +86,29 @@
     transition: 250ms;
 }
 
+.submit-button-mobile {
+    margin-top: 15px;
+    padding: 8px 118px;
+    border-radius: 10px;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: rgb(95, 98, 226);
+    border: 2px solid rgb(95, 98, 226);
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.submit-button-mobile:hover {
+    padding: 8px 118px;
+    transition: all 0.3s ease-out;
+    background: white;
+    color: rgb(25, 25, 25);
+    border: 2px solid rgb(95, 98, 226);
+    transition: 250ms;
+}
+
 .break {
     background-color: rgb(229, 229, 229);
     border-radius: 100px;
@@ -105,8 +137,218 @@
     padding-top: 20px;
 }
 
+.contact-info-container-mobile {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 80px;
+    padding-top: 20px;
+    display: none;
+}
+
+.contact-image {
+    height: 470px;
+    margin-left: 50%;
+    margin-top: 40px;
+}
+
 @media screen and (max-width: 1545px) {
+    .contact-image {
+        height: 430px;
+        margin-left: 40%;
+        margin-top: 40px;
+    }
+
+}
+
+@media screen and (max-width: 1420px) {
+    .contact-image {
+        height: 390px;
+        margin-left: 30%;
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 1290px) {
+    .contact-image {
+        height: 350px;
+        margin-left: 20%;
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .contact-header-container {
+        display: none;
+    }
+
+    .contact-header-container-mobile {
+        display: revert;
+    }
+
+    .contact-us-general-text {
+        font-size: 16px;
+    }
+
+    .submit-button-mobile {
+        display: revert;
+        width: 90%;
+        margin-left: 25px;
+    }
+
+    .header-data-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0%;
+        margin-top: 70px;
+        margin-left: 0%;
+    }
+
+    .contact-text {
+        font-size: 14px;
+    }
     
+    .contact-info {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .contact-info-container {
+        display: none;
+    }
+
+    .contact-info-container-mobile {
+        display: revert;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .contact-us-general-text {
+        font-size: 16px;
+    }
+
+    .submit-button-mobile {
+        display: revert;
+        width: 90%;
+        margin-left: 25px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .header-data-container {
+        margin-left: 12%;
+    }
+
+    .data-box {
+        width: 250px;
+        height: 30px;
+    }
+
+    .message-box {
+        width: 540px;
+        height: 50px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .header-data-container {
+        margin-left: 10%;
+    }
+
+    .data-box {
+        width: 240px;
+        height: 30px;
+    }
+
+    .message-box {
+        width: 520px;
+        height: 50px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .header-data-container {
+        margin-left: 8%;
+    }
+
+    .data-box {
+        width: 220px;
+        height: 30px;
+    }
+
+    .message-box {
+        width: 480px;
+        height: 50px;
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+    .header-data-container {
+        margin-left: 5%;
+    }
+
+    .data-box {
+        width: 200px;
+        height: 30px;
+    }
+
+    .message-box {
+        width: 440px;
+        height: 50px;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    .contact-header-container-mobile {
+    }
+
+    .data-box {
+        width: 140px;
+        height: 25px;
+    }
+
+    .message-box {
+        width: 320px;
+        height: 50px;
+    }
+
+    .header-data-container {
+        margin-left: 0%;
+        padding-left: 10.5%;
+    }
+
+    .contact-us-general-text {
+        width: 90%;
+    }
+
+    .header-data-container {
+        margin-top: 50px;
+    }
+
+    .submit-button-mobile {
+        font-weight: 500;
+        margin-left: 6%;
+        width: revert;
+    }
+
+    .submit-button-mobile:hover {
+        color: white;
+        background-color: rgb(95, 98, 226);
+        border: 2px solid rgb(95, 98, 226);
+    }
+
+    .contact-text {
+        font-size: 14px;
+    }
+    
+    .contact-info {
+        font-size: 15.5px;
+    }
 
 
 }

@@ -18,7 +18,7 @@ function PricingCardBase() {
                 <PricingCardElement title={'SMS Sharing'}/>
                 <PricingCardElement title={'On Call Attendant'}/>
             </div>
-            <div style={{marginTop: '140px'}}>
+            <div className='bottom-container-base'>
                 <div className='pricing-container'>
                     <h3 style={{fontWeight: 'bold'}} className='pricing-card-header'>$250</h3>
                     <p style={{fontSize: '12px', marginTop: '-22px'}}>+ $50 / additional hour</p>

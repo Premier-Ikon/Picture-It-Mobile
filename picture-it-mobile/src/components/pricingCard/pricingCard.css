@@ -44,3 +44,70 @@
     margin-left: 25px;
 
 }
+
+.bottom-container-prem {
+    margin-top: 45px;
+}
+
+.bottom-container-base {
+    margin-top: 140px;
+}
+
+@media screen and (max-width: 1545px) {
+    .pricing-card-header {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1010px) {
+    .pricing-card-container {
+        width: 340px;
+        height: 500px;
+    }
+
+    .pricing-card-element-text {
+        font-size: 14px;
+    }
+
+    .bottom-container-prem {
+        margin-top: -25px;
+    }
+    
+    .bottom-container-base {
+        margin-top: 100px;
+    }
+
+}
+
+@media screen and (max-width: 830px) {
+    .pricing-card-container {
+        width: 70%;
+        height: 520px;
+
+    }
+
+    .bottom-container-prem {
+        margin-top: -10px;
+    }
+
+    .bottom-container-base {
+        margin-top: 115px;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    .pricing-card-container {
+        width: 340px;
+        height: 550px;
+    }
+
+    .bottom-container-prem {
+        margin-top: -10px;
+    }
+
+    .bottom-container-base {
+        margin-top: 115px;
+    }
+}

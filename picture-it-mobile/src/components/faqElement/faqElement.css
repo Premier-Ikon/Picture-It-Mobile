@@ -40,6 +40,8 @@
     overflow-y: hidden;
     transition: all 0.4s ease;
     padding-top: 5px;
+    padding-right: 10%;
+    color: rgb(124, 124, 124);
 }
 
 .faq.open .faq-icon {
@@ -52,6 +54,47 @@
     padding-top: 10px;
 }
 
-@media screen and (max-width: 960px) {
+.fa-plus {
+    /* color: 'rgb(179, 179, 179', fontSize: '24px'
+     */
+     color: rgb(179, 179, 179);
+     font-size: 24px;
+}
 
+
+@media screen and (max-width: 750px) {
+    .fa-plus {
+        font-size: 20px;
+    }
+    
+    .faq-question {
+        font-size: 20px;
+    }
+    
+    .faq-answer {
+        font-size: 15px;
+    }
+    
+    .faq-icon {
+        right: 80px;
+    }
+    
+}
+
+@media screen and (max-width: 630px) {
+    .faq-question {
+        margin-right: 20%;
+    }
+    
+}
+
+@media screen and (max-width: 430px) {
+    .faq-question {
+        font-size: 18px;
+        margin-right: 25%;
+    }
+
+    .faq-answer {
+        font-size: 13px;
+    }
 }

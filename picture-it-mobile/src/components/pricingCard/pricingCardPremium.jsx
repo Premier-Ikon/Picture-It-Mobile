@@ -21,7 +21,7 @@ function PricingCardPremium() {
                 <PricingCardElement type={'dark'} title={'GIF Creation & Sharing'}/>
                 <PricingCardElement type={'dark'} title={'Props Provided'}/>
             </div>
-            <div style={{marginTop: '45px'}}>
+            <div className='bottom-container-prem'>
                 <div className='pricing-container'>
                     <h3 style={{fontWeight: 'bold', color: 'white'}} className='pricing-card-header'>$250</h3>
                     <p style={{fontSize: '12px', marginTop: '-22px', color: 'white'}}>+ $50 / additional hour</p>

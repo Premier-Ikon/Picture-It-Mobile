@@ -12,7 +12,7 @@ function FaqElement({faq, index, toggleFaq}) {
                     {faq.question}
                 </div>
                 <div className="faq-icon">
-                    <i style={{color: 'rgb(179, 179, 179', fontSize: '24px'}} className="fa-solid fa-plus"/>
+                    <i className="fa-solid fa-plus"/>
                 </div>
             </div>
             <div className="faq-answer">
