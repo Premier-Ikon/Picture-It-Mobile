@@ -27,15 +27,24 @@ import CheckItem from '../../components/checkItem/checkItem';
 import InternalAd from '../../components/internalAd/internalAd';
 import CarasoulItem from '../../components/carasoulItem/carasoulItem';
 import CarasoulItemMobile from '../../components/carasoulItemMobile/carasoulItemMobile';
+import { Helmet } from 'react-helmet-async';
 
 
 function HomeScreen() {
-    return ( 
+    return <>
+        <Helmet>
+            <title>Picture It Mobile Home Screen</title>
+            <meta
+                name='description'
+                content='Welcome to Picture It Mobile, we strive to make sure that every one of our customers is satisfied with there service and happy and satisfied with there service.'
+            />
+            <link rel='canonical' href='/' />
+        </Helmet>
         <div>
             <div className='home-header-container'>
                 <div className='home-left-container'>
                     <div className='left-header-component'>
-                        <h3 className='general-large-header'>Your memories,</h3>
+                        <h1 style={{paddingBottom: '10px'}} className='general-large-header'>Your memories,</h1>
                         <h3 className='general-large-header-bottom'>our joy.</h3>
                         <p className='general-text' style={{marginTop: '-35px', width: '80%'}}>Picture It Mobile is a company that provides personalized photo booth rentals.</p>
                     </div>
@@ -286,7 +295,7 @@ function HomeScreen() {
             </div>
         </div>
 
-     );
+     </>
 }
 
 export default HomeScreen;

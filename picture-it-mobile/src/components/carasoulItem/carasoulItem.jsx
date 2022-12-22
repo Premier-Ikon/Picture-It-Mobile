@@ -15,7 +15,7 @@ function CarasoulItem({headerText, secondaryText, image, path, buttonText}) {
                 </div>
             </div>
             <div style={{marginLeft: '30%'}}>
-                <img className='carasoulPhoto' style={{height: '450px'}} src={image}/>
+                <img className='carasoulPhoto' style={{height: '450px'}} src={image} alt={'Carasoul Image'}/>
             </div>
         </div>
      );

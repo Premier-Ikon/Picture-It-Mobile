@@ -4,7 +4,7 @@ function ProfileCard({name, role, imageSrc}) {
     return ( 
         <div>
             <div>
-                <img className='profile-image' src={imageSrc}/>
+                <img className='profile-image' src={imageSrc} alt={'Profile Image'}/>
             </div>
             <div className='profile-content'>
                 <h3 className='profile-name'>{name}</h3>

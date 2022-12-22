@@ -4,7 +4,7 @@ function IconBox({image, headerText, contentText}) {
     return ( 
         <div className='icon-box-container'>
             <div className="image-circle-container">
-                <img className={'icon-box-image'} src={image} alt="TEST"></img>
+                <img className={'icon-box-image'} src={image} alt="Icon Box"></img>
             </div>
             <div className='text-container'>
                 <h3 className="header-text-icon-box">{headerText}</h3>

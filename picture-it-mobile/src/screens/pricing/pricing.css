@@ -15,6 +15,9 @@
     /* display: flex; */
     align-content: center;
     /* justify-content: center; */
+    background-color: rgb(249,249,249);
+    padding-top: 1px;
+
 }
 
 .faq-container {
@@ -53,5 +56,6 @@
     .pricing-header-container-mobile {
         display: revert;
         margin-top: -10px;
+        margin-bottom: 30px;
     }
 }

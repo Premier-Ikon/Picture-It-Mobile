@@ -5,13 +5,24 @@ import DylanHeadShot from '../../assets/dylan-headshot.png';
 import MelinaHeadShot from '../../assets/melina-headshot.png';
 import InternalAd from '../../components/internalAd/internalAd';
 
+import { Helmet } from 'react-helmet-async';
+
+
 
 function AboutUs() {
-    return ( 
+    return <>
+        <Helmet>
+            <title>About Picture It Mobile</title>
+            <meta
+                name='description'
+                content='Picture It Mobile is a young entrepreneur owned business that strives for customer happiness.'
+            />
+            <link rel='canonical' href='/about-us' />
+        </Helmet>
         <div>
             <div className='about-us-header-container'>
                 <div className='header-container-about'>
-                    <p className='about-us-general-text-top'>About Us</p>
+                    <h1 className='about-us-general-text-top'>About Us</h1>
                     <h3 style={{marginTop: '20px'}} className='general-large-header'>Photobooth business offering the best services</h3>
                     <p style={{}} className='about-us-general-text-bottom'>Being able to document your fun and having that opporutinty to look back on these memories is one of the most important things to our team.</p>
                 </div>
@@ -48,7 +59,7 @@ function AboutUs() {
                 <InternalAd/>
             </div>
         </div>
-     );
+    </>
 }
 
 export default AboutUs;

@@ -8,6 +8,9 @@ import PricingCardBase from '../../components/pricingCard/pricingCardBase';
 import PricingCardPremium from '../../components/pricingCard/pricingCardPremium';
 import FaqElement from '../../components/faqElement/faqElement';
 
+import { Helmet } from 'react-helmet-async';
+
+
 function Pricing() {
     const [faqs, setfaqs] = useState([
         {
@@ -39,12 +42,20 @@ function Pricing() {
         }))
     };
 
-    return ( 
+    return <>
+        <Helmet>
+            <title>Picture It Mobile Pricing</title>
+            <meta
+                name='description'
+                content='Picture It Mobile offers the best pricing all around the Inland Empire. No one can compete with our pricing as we are here for the memories.'
+            />
+            <link rel='canonical' href='/' />
+        </Helmet>
         <div style={{backgroundColor: 'white'}}>
             <div className='pricing-header-container'>
                 <div className='pricing-header-text'>
                     <div>
-                        <h3 className='general-large-header'>Pricing options</h3>
+                        <h1 style={{paddingTop: '15px', paddingBottom: '10px'}} className='general-large-header'>Pricing options</h1>
                         <p className='general-text' style={{textAlign: 'center', marginTop: '-40px'}}>Get the option that best fits your needs</p>
                     </div>
                 </div>
@@ -58,7 +69,7 @@ function Pricing() {
                 <div className='pricing-header-text'>
                     <div>
                         <h3 style={{textAlign: 'center'}} className='general-large-header'>Pricing options</h3>
-                        <p className='general-text' style={{textAlign: 'center', marginTop: '-40px'}}>Get the option that best fits your needs</p>
+                        <p className='general-text' style={{textAlign: 'center', marginTop: '-35px'}}>Get the option that best fits your needs</p>
                     </div>
                 </div>
                 <div>
@@ -99,7 +110,7 @@ function Pricing() {
                 </div>       
             </div>
         </div>
-     );
+    </>
 }
 
 export default Pricing;

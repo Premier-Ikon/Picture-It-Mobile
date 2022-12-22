@@ -5,6 +5,9 @@ import emailjs from '@emailjs/browser';
 import HeaderImage from '../../assets/contact-us-image.png';
 import IconButton from '../../components/iconButton/iconButton';
 
+import { Helmet } from 'react-helmet-async';
+
+
 function ContactUs() {
     const [data, setData] = useState({
         name: "",
@@ -62,13 +65,21 @@ function ContactUs() {
             "Please allow 24 business hours for a response. If your inquiry is urgent please call us at (951)458-3966")
     }
 
-    return ( 
+    return <>
+        <Helmet>
+            <title>Contact Picture It Mobile</title>
+            <meta
+                name='description'
+                content='Feel free to contact us with any inquiries. We will be sure to make sure your special event is captured through our photo booth.'
+            />
+            <link rel='canonical' href='/' />
+        </Helmet>
         <div>
             <div className='contact-header-container'>
                 <div className='header-data-container'>
                     <div className='form-data-container'>
                         <div style={{marginBottom: '20px'}}>
-                            <h3 className='general-standard-header'>Get In Touch With Us</h3>
+                            <h1 style={{paddingBottom: '10px', paddingTop: '15px'}} className='general-standard-header'>Get In Touch With Us</h1>
                             <p style={{fontSize: '18px', marginTop: '-30px'}} className='about-us-general-text'>Fill out the form and an expert will contact you shortly</p>
                         </div>
                         <div className="form-data">
@@ -352,7 +363,7 @@ function ContactUs() {
             </div>
 
         </div>
-     );
+    </>
 }
 
 export default ContactUs;

@@ -23,7 +23,7 @@ function PricingCardPremium() {
             </div>
             <div className='bottom-container-prem'>
                 <div className='pricing-container'>
-                    <h3 style={{fontWeight: 'bold', color: 'white'}} className='pricing-card-header'>$250</h3>
+                    <h3 style={{fontWeight: 'bold', color: 'white'}} className='pricing-card-header'>$400</h3>
                     <p style={{fontSize: '12px', marginTop: '-22px', color: 'white'}}>+ $50 / additional hour</p>
                 </div>
                 <div style={{marginLeft: '25px', marginTop: '20px'}}>
