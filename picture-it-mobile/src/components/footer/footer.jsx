@@ -28,9 +28,7 @@ function Footer() {
                             </Link>
                         </div>
                         <div style={{marginLeft: '30%'}}>
-                            {/* <Link to='/pricing' style={{textDecoration: 'none'}}> */}
-                                <p style={{fontSize: '18px', color: 'white', fontWeight: 'bold'}}>Services</p>
-                            {/* </Link> */}
+                            <p style={{fontSize: '18px', color: 'white', fontWeight: 'bold'}}>Services</p>
                             <Link to='/pricing' style={{textDecoration: 'none'}}>
                                 <p style={{color: 'rgb(128, 128, 128)', width: '150px'}}>Photo Booth</p>
                             </Link>
@@ -40,7 +38,6 @@ function Footer() {
                         </div>
                         <div style={{marginLeft: '30%'}}>
                             <p style={{fontSize: '18px', color: 'white', fontWeight: 'bold'}}>Info</p>
-                            {/* <p style={{color: 'rgb(128, 128, 128)'}}>Refund Policy</p> */}
                             <Link to='/about-us' style={{textDecoration: 'none'}}>
                                 <p style={{color: 'rgb(128, 128, 128)', width: '100px'}}>About Us</p>
                             </Link>
@@ -86,9 +83,7 @@ function Footer() {
                             </Link>
                         </div>
                         <div style={{marginLeft: '5%'}}>
-                            {/* <Link to='/pricing' style={{textDecoration: 'none'}}> */}
-                                <p style={{fontSize: '16px', color: 'white', fontWeight: 'bold', textAlign: 'center'}}>Services</p>
-                            {/* </Link> */}
+                            <p style={{fontSize: '16px', color: 'white', fontWeight: 'bold', textAlign: 'center'}}>Services</p>
                             <Link to='/pricing' style={{textDecoration: 'none'}}>
                                 <p style={{color: 'rgb(128, 128, 128)', width: '150px', textAlign: 'center'}}>Photo Booth</p>
                             </Link>
@@ -98,7 +93,6 @@ function Footer() {
                         </div>
                         <div style={{marginLeft: '5%'}}>
                             <p style={{fontSize: '16px', color: 'white', fontWeight: 'bold', textAlign: 'center'}}>Info</p>
-                            {/* <p style={{color: 'rgb(128, 128, 128)'}}>Refund Policy</p> */}
                             <Link to='/about-us' style={{textDecoration: 'none'}}>
                                 <p style={{color: 'rgb(128, 128, 128)', width: '100px', textAlign: 'center'}}>About Us</p>
                             </Link>

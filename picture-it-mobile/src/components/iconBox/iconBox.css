@@ -61,11 +61,6 @@
     }
 
 }
-@media screen and (max-width: 1350px) {
-    .icon-box-container {
-        /* background-color: red; */
-    }
-}
 
 @media screen and (max-width: 1160px) {
     .icon-box-container {

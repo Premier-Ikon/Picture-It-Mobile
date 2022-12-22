@@ -261,11 +261,6 @@ function HomeScreen() {
                                 <CheckItem contentText={'Share memories with friends'} />
                             </div>
                         </div>
-                        {/* <div style={{display: 'flex', justifyContent: 'center', marginTop: '15px'}}>
-                            <div>
-                                <Button buttonStyle={'btn--primary-wide'} path='/pricing' children={'Learn More'}></Button>
-                            </div>
-                        </div> */}
                     </div>
 
                     <div style={{marginTop: '-20px'}}>
