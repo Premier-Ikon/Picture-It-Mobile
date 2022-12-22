@@ -14,8 +14,8 @@
     color: wheat;
     justify-self: start;
     cursor: pointer;
-    height: 175px;
-    transform: translate(-5%, 0%);
+    height: 50px;
+    transform: translate(4%, 0%);
   }
   
   .fa-firstdraft {
@@ -124,7 +124,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      transform: translate(-10%, -13.5%);
+      transform: translate(0%, 15%);
     }
   
     .menu-icon {

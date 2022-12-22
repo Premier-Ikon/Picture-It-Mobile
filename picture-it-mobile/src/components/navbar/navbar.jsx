@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 
 import './navbar.css'
 import NavLogo from '../../assets/navbar-logo.png'
+import NavLogo2 from '../../assets/navbar-logo-3.png'
 
 
 function Navbar() {
@@ -15,7 +16,7 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          <a href={'/home'}><img className='navbar-logo' src={NavLogo} alt={"navbar"}/></a>
+          <a href={'/home'}><img className='navbar-logo' src={NavLogo2} alt={"navbar"}/></a>
         </Link>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

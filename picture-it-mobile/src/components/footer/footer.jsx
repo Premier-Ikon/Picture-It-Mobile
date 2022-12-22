@@ -1,6 +1,7 @@
 import './footer.css';
 
 import Icon from '../../assets/icon.png';
+import Icon2 from '../../assets/footer-logo-2.png';
 import IconButton from '../iconButton/iconButton';
 import {Link} from "react-router-dom";
 
@@ -10,9 +11,9 @@ function Footer() {
 
             <div className='footer-container'>
                 <div style={{display: 'flex', marginLeft: '12%'}}>
-                    <div style={{marginTop: '2%'}}>
+                    <div style={{marginTop: '80px'}}>
                         <Link to='/' style={{textDecoration: 'none'}}>
-                            <img style={{height: '200px'}} src={Icon} alt="ICON"/>
+                            <img style={{height: '80px'}} src={Icon2} alt="ICON"/>
                         </Link>
                     </div>
                     <div style={{display: 'flex', marginTop: '60px', position: 'absolute', right: '390px'}}>
@@ -48,7 +49,7 @@ function Footer() {
                     </div>
                 </div>
                 <div style={{display: 'flex', justifyContent: 'center'}}>
-                    <div style={{marginTop: '45px', display: 'flex'}} className='footer-bottom-content' >
+                    <div style={{marginTop: '105px', display: 'flex'}} className='footer-bottom-content' >
                         <p style={{color: 'rgb(128, 128, 128)', marginTop: '35px'}}>Copyright © 2022</p>
 
                         <div style={{display: 'flex', marginTop: '27px',position: 'absolute', right: '10%'}}>
@@ -63,14 +64,14 @@ function Footer() {
             
             <div className='footer-container-mobile'>
                 <div style={{display: 'flex', justifyContent: 'center'}}>
-                    <div style={{marginTop: '2%'}}>
+                    <div style={{marginTop: '5%'}}>
                         <Link to='/' style={{textDecoration: 'none'}}>
-                            <img style={{height: '100px'}} src={Icon} alt="ICON"/>
+                            <img style={{height: '55px'}} src={Icon2} alt="ICON"/>
                         </Link>
                     </div>
                 </div>
                 <div>
-                <div style={{display: 'flex', justifyContent: 'center', marginTop: '0%', marginLeft: '10%', marginRight: '10%'}}>
+                <div style={{display: 'flex', justifyContent: 'center', marginTop: '3%', marginLeft: '10%', marginRight: '10%'}}>
                         <div>
                             <Link to='/' style={{textDecoration: 'none'}}>
                                 <p style={{fontSize: '16px', color: 'white', fontWeight: 'bold', textAlign: 'center'}}>Home</p>
