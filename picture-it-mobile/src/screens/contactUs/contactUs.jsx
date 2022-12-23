@@ -1,11 +1,12 @@
 import './contactUs.css';
 import {useState, useRef} from "react";
+import { Helmet } from 'react-helmet-async';
 import emailjs from '@emailjs/browser';
+import Calendar from 'react-calendar';
 
 import HeaderImage from '../../assets/contact-us-image.png';
 import IconButton from '../../components/iconButton/iconButton';
 
-import { Helmet } from 'react-helmet-async';
 
 
 function ContactUs() {
@@ -18,12 +19,18 @@ function ContactUs() {
         message: "",
     });
 
+    const [eventDate, setEventDate] = useState(new Date());
+
     const form = useRef();
 
     const {name, email, phone, address, date, message} = data
 
     const handleChange = e => {
         setData({...data, [e.target.name]: e.target.value});
+    }
+
+    const onDateChange = eventDate => {
+        setEventDate(eventDate);
     }
 
     const handleSubmit = async (e) => {
@@ -62,7 +69,7 @@ function ContactUs() {
         }
 
         alert("Thank you for your inquiry, someone on our team will be in contact as soon as possible . \n\n" +
-            "Please allow 24 business hours for a response. If your inquiry is urgent please call us at (951)458-3966")
+            "Please allow 24-48 hours for a response. If your inquiry is urgent please call us at (951)796-7321")
     }
 
     return <>
@@ -129,7 +136,7 @@ function ContactUs() {
                                     </div>
                                     <div style={{marginLeft: '30px'}}>
                                         <div className="data-header">
-                                            <label>Your address</label>
+                                            <label>Event address</label>
                                         </div>
                                         <input
                                             type="text"
@@ -178,6 +185,8 @@ function ContactUs() {
                             </form>
                         </div>
                     </div>
+                    {/* <Calendar onChange={onDateChange} value={eventDate}/> */}
+
                     <div>
                         <img className='contact-image' style={{}} src={HeaderImage} alt="Camera"/>
                     </div>
@@ -237,7 +246,7 @@ function ContactUs() {
                                     </div>
                                     <div style={{marginLeft: '30px'}}>
                                         <div className="data-header">
-                                            <label>Your address</label>
+                                            <label>Event address</label>
                                         </div>
                                         <input
                                             type="text"

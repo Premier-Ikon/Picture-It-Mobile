@@ -14,18 +14,18 @@ import { Helmet } from 'react-helmet-async';
 function Pricing() {
     const [faqs, setfaqs] = useState([
         {
-            question: 'How do I get rid of bees?',
-            answer: 'We suggest giving a professional a call as bees are not something a homeowner should try and remove.',
+            question: 'How long does it take to setup the photo booth?',
+            answer: 'With our current team it takes roughly an hour to setup and tear down all of our equipment at the party.',
             open: false
         },
         {
-            question: 'How does bee removal work?',
-            answer: 'Our technician will have to come out in order to identify the severity of the infestation, in order to decide whether they want to trap and remove, or exterminate. Our preference is to trap and remove depending on the severity of the infestation.',
+            question: 'Do I need to supply power for the booth?',
+            answer: 'With our current setup we do require that power is provided at the event. We will supply the extension cords, but need a power outlet to plug into.',
             open: false
         },
         {
-            question: 'Do you clean the area that the bees have impacted?',
-            answer: 'Our technicians will do a thorough walk-through after they have removed the bees, in order to ensure the impacted area has been cleaned and treated.',
+            question: 'Does the photo both ever have malfunctions?',
+            answer: 'The photo booth never has malfunctions, and the current process is pretty much error proof and works great throughout the entire event.',
             open: false
         }
     ]);
