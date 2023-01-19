@@ -9,7 +9,7 @@ function PricingCardPremium() {
                 <h3 style={{marginTop: '15px', marginBottom: '15px', marginLeft: '15px', color: 'white'}} className='pricing-card-header'>Premium</h3>
             </div>
             <div className='benefit-element-outer-container'>
-                <PricingCardElement type={'dark'} title={'3 Hours'}/>
+                <PricingCardElement type={'dark'} title={'5 Hours'}/>
                 <PricingCardElement type={'dark'} title={'Unlimited 2x6 Printouts'}/>
                 <PricingCardElement type={'dark'} title={'Personalized Event Graphic'}/>
                 <PricingCardElement type={'dark'} title={'Setup/Tear Down Included'}/>
