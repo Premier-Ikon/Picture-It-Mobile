@@ -74,7 +74,6 @@ function ContactUs() {
 
     return <>
         <Helmet>
-            <title>Contact Picture It Mobile</title>
             <meta
                 name='description'
                 content='Feel free to contact us with any inquiries. We will be sure to make sure your special event is captured through our photo booth.'

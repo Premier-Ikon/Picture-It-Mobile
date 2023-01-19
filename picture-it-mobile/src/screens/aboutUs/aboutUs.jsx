@@ -12,7 +12,6 @@ import { Helmet } from 'react-helmet-async';
 function AboutUs() {
     return <>
         <Helmet>
-            <title>About Picture It Mobile</title>
             <meta
                 name='description'
                 content='Picture It Mobile is a young entrepreneur owned business that strives for customer happiness.'

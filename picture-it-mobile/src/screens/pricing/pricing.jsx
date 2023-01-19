@@ -44,7 +44,6 @@ function Pricing() {
 
     return <>
         <Helmet>
-            <title>Picture It Mobile Pricing</title>
             <meta
                 name='description'
                 content='Picture It Mobile offers the best pricing all around the Inland Empire. No one can compete with our pricing as we are here for the memories.'

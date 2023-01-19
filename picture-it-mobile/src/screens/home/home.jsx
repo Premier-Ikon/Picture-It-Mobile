@@ -33,7 +33,6 @@ import { Helmet } from 'react-helmet-async';
 function HomeScreen() {
     return <>
         <Helmet>
-            <title>Picture It Mobile Home Screen</title>
             <meta
                 name='description'
                 content='Welcome to Picture It Mobile, we strive to make sure that every one of our customers is satisfied with there service and happy and satisfied with there service.'
