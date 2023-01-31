@@ -18,6 +18,7 @@ import GroupImage from '../../assets/group-image.png';
 import SoloImage from '../../assets/solo-image.png';
 import CustomExperience from '../../assets/custom-experience-image.png';
 import InstandPhoto from '../../assets/instant-photo-image.png';
+import PhotoBoothAttendant from '../../assets/photo-booth-attendant.png';
 
 import Button from '../../components/button/button';
 import HeaderImage from '../../assets/header-image.png';
@@ -183,6 +184,9 @@ function HomeScreen() {
                         </SwiperSlide>
                         <SwiperSlide>
                             <CarasoulItem headerText={'Instant photos!'} buttonText={'Learn More'} secondaryText={'Give a personalized keepsake for everyone to take home and cherish.'} image={InstandPhoto}/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <CarasoulItem headerText={'Photo booth attendant not included!'} buttonText={'Learn More'} secondaryText={'Give a personalized keepsake for everyone to take home and cherish.'} image={PhotoBoothAttendant}/>
                         </SwiperSlide>
                     </Swiper>
                 </div>
