@@ -186,7 +186,7 @@ function HomeScreen() {
                             <CarasoulItem headerText={'Instant photos!'} buttonText={'Learn More'} secondaryText={'Give a personalized keepsake for everyone to take home and cherish.'} image={InstandPhoto}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <CarasoulItem headerText={'Photo booth attendant not included!'} buttonText={'Learn More'} secondaryText={'Give a personalized keepsake for everyone to take home and cherish.'} image={PhotoBoothAttendant}/>
+                            <CarasoulItem headerText={'Photo booth attendant not included!'} buttonText={'Learn More'} secondaryText={'Fortunately for you we do not require a photo booth attendant with our setup.'} image={PhotoBoothAttendant}/>
                         </SwiperSlide>
                     </Swiper>
                 </div>
