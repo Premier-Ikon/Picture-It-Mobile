@@ -23,7 +23,7 @@ function AboutUs() {
                 <div className='header-container-about'>
                     <h1 className='about-us-general-text-top'>About Us</h1>
                     <h3 style={{marginTop: '20px'}} className='general-large-header'>Photobooth business offering the best services</h3>
-                    <p style={{}} className='about-us-general-text-bottom'>Being able to document your fun and having that opporutinty to look back on these memories is one of the most important things to our team.</p>
+                    <p style={{}} className='about-us-general-text-bottom'>Being able to document your fun and having that opportunity to look back on these memories is one of the most important things to our team.</p>
                 </div>
             </div>
             <div className='about-us-info-container'>
@@ -44,7 +44,7 @@ function AboutUs() {
                 <div className='our-team-container'>
                     <div className='our-team-inner'>
                         <h3 className='general-standard-header'>Our Team</h3>
-                        <p style={{fontSize: '21px', marginTop: '-30px', marginLeft: '7.5%', width: '85%'}} className='about-us-general-text'>Being able to recall on all of your amazing events is one of our biggest goals. We strive to ensure that all of our customers are satisfied</p>
+                        <p style={{fontSize: '21px', marginTop: '-30px', marginLeft: '7.5%', width: '85%'}} className='about-us-general-text'>Being able to recall on all of your amazing events is one of our biggest goals. We strive to ensure that all of our customers are satisfied.</p>
                     </div>
                 </div>
                 <div className='profile-card-container'>

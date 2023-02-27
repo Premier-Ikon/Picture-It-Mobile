@@ -95,7 +95,7 @@ function HomeScreen() {
                         </Link>
                         <div style={{marginLeft: '2%'}}>
                             <Link to='/pricing' style={{textDecoration: 'none'}}>
-                                <IconBox image={StarImage} headerText={"Satisfaction"} contentText={"We strive to have a satisfaction guarauntee"}/>
+                                <IconBox image={StarImage} headerText={"Satisfaction"} contentText={"We strive to have a satisfaction guarantee"}/>
                             </Link>
                         </div>
                     </div>
@@ -148,7 +148,7 @@ function HomeScreen() {
                             </Link>
                             <div style={{marginLeft: '2%'}}>
                                 <Link to='/pricing' style={{textDecoration: 'none'}}>
-                                    <IconBox image={StarImage} headerText={"Satisfaction"} contentText={"We strive to have a satisfaction guarauntee"}/>
+                                    <IconBox image={StarImage} headerText={"Satisfaction"} contentText={"We strive to have a satisfaction guarantee"}/>
                                 </Link>
                             </div>
                         </div>
@@ -171,7 +171,7 @@ function HomeScreen() {
             <div className='home-third-container'>
                 <div>
                     <Swiper
-                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                    // modules={[Navigation, Pagination, Scrollbar]}
                     spaceBetween={1000}
                     slidesPerView={1}
                     navigation
@@ -180,7 +180,7 @@ function HomeScreen() {
                     style={{marginTop: '50px', paddingLeft: '17%'}}
                     >
                         <SwiperSlide style={{paddingBottom: '120px'}}>
-                            <CarasoulItem headerText={'A customized experience!'} buttonText={'Learn More'} secondaryText={'Get a customized intergace and LED lights to blend with your enviroment.'} image={CustomExperience}/>
+                            <CarasoulItem headerText={'A customized experience!'} buttonText={'Learn More'} secondaryText={'Get a customized interface and LED lights to blend with your enviroment.'} image={CustomExperience}/>
                         </SwiperSlide>
                         <SwiperSlide>
                             <CarasoulItem headerText={'Instant photos!'} buttonText={'Learn More'} secondaryText={'Give a personalized keepsake for everyone to take home and cherish.'} image={InstandPhoto}/>
@@ -203,7 +203,7 @@ function HomeScreen() {
                     style={{marginTop: '50px'}}
                     >
                         <SwiperSlide style={{paddingBottom: '120px'}}>
-                            <CarasoulItemMobile headerText={'A customized experience!'} buttonText={'Learn More'} secondaryText={'Get a customized intergace and LED lights to blend with your enviroment.'} image={CustomExperience}/>
+                            <CarasoulItemMobile headerText={'A customized experience!'} buttonText={'Learn More'} secondaryText={'Get a customized interface and LED lights to blend with your enviroment.'} image={CustomExperience}/>
                         </SwiperSlide>
                         <SwiperSlide>
                             <CarasoulItemMobile headerText={'Instant photos!'} buttonText={'Learn More'} secondaryText={'Give a personalized keepsake for everyone to take home and cherish.'} image={InstandPhoto}/>

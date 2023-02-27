@@ -303,7 +303,7 @@ function ContactUs() {
 
             <div className='contact-info-container'>
                 <div>
-                    <h3 className='general-standard-header'>Contact information</h3>
+                    <h3 className='general-standard-header'>Contact Information</h3>
                 </div>
                 <div className='contact-info-inner-container'>
                     <button style={{backgroundColor: 'transparent', height: '68px', padding: '0px', borderColor: 'transparent', textAlign: 'left', display: 'revert', color: 'black'}} onClick={() => window.open( "mailto: info@pictureitmobile.com?subject=Online Inquiry", '_self')}>
@@ -335,7 +335,7 @@ function ContactUs() {
             </div>
             <div className='contact-info-container-mobile'>
                 <div>
-                    <h3 className='general-standard-header'>Contact information</h3>
+                    <h3 className='general-standard-header'>Contact Information</h3>
                 </div>
                 <div style={{display: 'flex', justifyContent: 'space-between'}}>
                     <div >
