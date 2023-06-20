@@ -1,59 +1,86 @@
 .pricing-header-container {
-    padding-bottom: 75px;
+  padding-bottom: 75px;
 }
 
 .pricing-header-container-mobile {
-    display: none;
+  display: none;
+}
+
+.add-on-container {
+  margin-bottom: 100px;
+}
+
+.add-on-container-small {
+  display: none;
+  margin-bottom: 140px;
+  margin-top:  -100px;
+}
+
+.add-on-content {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.add-on-title {
+  font-size: 20px;
 }
 
 .pricing-header-text {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .faq-page-container {
-    align-content: center;
-    background-color: rgb(249,249,249);
-    padding-top: 1px;
-
+  align-content: center;
+  background-color: rgb(249, 249, 249);
+  padding-top: 1px;
 }
 
 .faq-container {
-    padding-left: 5%;
-    padding-right: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .general-text-link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .test {
-    color: rgb(95, 98, 226);
+  color: rgb(95, 98, 226);
 }
 
 .test:hover {
-    color:rgb(86, 89, 255);
+  color: rgb(86, 89, 255);
 }
 
 @media screen and (max-width: 830px) {
-    .pricing-header-container {
-        display: none;
-    }
+  .pricing-header-container {
+    display: none;
+  }
 
-    .pricing-header-container-mobile {
-        display: revert;
-    }
+  .pricing-header-container-mobile {
+    display: revert;
+  }
 
-    .faq-page-container {
-        margin-top: -90px;
-    }
+  .faq-page-container {
+    margin-top: -90px;
+  }
 
+  .add-on-container-small {
+    display: revert;
+  }
+
+  .add-on-container {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 430px) {
-    .pricing-header-container-mobile {
-        display: revert;
-        margin-top: -10px;
-        margin-bottom: 30px;
-    }
+  .pricing-header-container-mobile {
+    display: revert;
+    margin-top: -10px;
+    margin-bottom: 30px;
+  }
 }

@@ -1,6 +1,6 @@
 .pricing-card-container {
     width: 380px;
-    height: 600px;
+    height: 650px;
     border-radius: 10px;
     border: solid 1px rgb(222, 222, 222);
     background-color: white;
@@ -40,11 +40,11 @@
 }
 
 .bottom-container-prem {
-    margin-top: 45px;
+    margin-top: 30px;
 }
 
 .bottom-container-base {
-    margin-top: 140px;
+    margin-top: 160px;
 }
 
 @media screen and (max-width: 1545px) {
@@ -57,7 +57,7 @@
 @media screen and (max-width: 1010px) {
     .pricing-card-container {
         width: 340px;
-        height: 500px;
+        height: 580px;
     }
 
     .pricing-card-element-text {
@@ -65,11 +65,11 @@
     }
 
     .bottom-container-prem {
-        margin-top: -25px;
+        margin-top: -15px;
     }
     
     .bottom-container-base {
-        margin-top: 100px;
+        margin-top: 140px;
     }
 
 }
@@ -77,16 +77,16 @@
 @media screen and (max-width: 830px) {
     .pricing-card-container {
         width: 70%;
-        height: 520px;
+        height: 590px;
 
     }
 
     .bottom-container-prem {
-        margin-top: -10px;
+        margin-top: -5px;
     }
 
     .bottom-container-base {
-        margin-top: 115px;
+        margin-top: 145px;
     }
 
 }
